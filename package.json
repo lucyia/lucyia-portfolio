@@ -1,0 +1,26 @@
+{
+  "name": "lucyia-portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucyia/lucyia-portfolio.git"
+  },
+  "author": "lucyia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lucyia/lucyia-portfolio/issues"
+  },
+  "homepage": "https://github.com/lucyia/lucyia-portfolio#readme",
+  "devDependencies": {
+    "bootstrap": "^3.3.6",
+    "browser-sync": "^2.11.1",
+    "gulp": "^3.9.1",
+    "gulp-less": "^3.0.5",
+    "gulp-minify": "0.0.5"
+  }
+}
