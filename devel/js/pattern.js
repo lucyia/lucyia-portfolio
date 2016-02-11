@@ -15,8 +15,8 @@
 	$(document).ready(function(){
 
 		// minus 2px for save values of width/height without scrollbars
-		var canvasWidth = $(window).width() - 2;
-		var canvasHeight = $(window).height() - 2;
+		var canvasWidth = $(window).width() - 10;
+		var canvasHeight = $(window).height() - 10;
 		
 		// create svg panel over the whole viewport
 		var svg = d3.select('body')
@@ -51,6 +51,8 @@
 									+' z'
 						})
 						.attr('fill', 'black')
+						.attr('stroke', '#111111')
+						.attr('stoke-width', 1)
 						.style('opacity', 0.8)
 						.on('mouseover', function(){
 							d3.select(this)					
