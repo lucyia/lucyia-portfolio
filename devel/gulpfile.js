@@ -22,8 +22,7 @@ gulp.task('sync', function(){
 });
 
 gulp.task('less', function () {
-	return gulp.src('./less/*.less')
-		.pipe(concat('style.less'))
+	return gulp.src('./less/style.less')		
 		.pipe(less())
 		.pipe(cssnano())
 		.pipe(gulp.dest('../dist'))
