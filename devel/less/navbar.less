@@ -1,0 +1,28 @@
+.navbar{
+	background-color: transparent;
+	border: 0px solid transparent;	
+}
+
+.navbar-nav {
+	&>li{
+		margin: 0 50px 0 0;
+	}
+
+	& a{
+		font-weight: bold;		
+		color: @color-light;
+		border-top: 7px solid transparent;
+
+		&:hover{
+			color: @color-dark !important;
+			border-color: @color-dark;
+		}
+	}
+
+	&>.active>a{
+		color: @color-dark;
+		color: @color-main !important;
+		background-color: transparent !important;
+		border-top: 7px solid @color-main;
+	}
+}
