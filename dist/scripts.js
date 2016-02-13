@@ -21747,6 +21747,21 @@ if (typeof jQuery === 'undefined') {
   });
   if (typeof define === "function" && define.amd) this.d3 = d3, define(d3); else if (typeof module === "object" && module.exports) module.exports = d3; else this.d3 = d3;
 }();
+(function(window, document, undefined){
+	$(document).ready(function(){		
+		if ($("#index-navbar").prop("disabled")) {
+			$("#index-toggle").on("click", function(){
+				$("#index-navbar").fadeOut("slow").animate({"left": "70%" }, {duration: "slow", queue: false}, function() {/*done*/});
+				$("#index-navbar").prop("disabled", true);
+			});
+		} else {
+			$("#index-toggle").on("click", function(){
+				$("#index-navbar").fadeIn("slow").animate({"left": "70%" }, {duration: "slow", queue: false}, function() {/*done*/});
+				$("#index-navbar").prop("disabled", false);
+			});
+		}
+	});	
+})(this, document);
 /**
  * Generates elements defined by path on SVG with hovering effect
  * The element looks something like this:
