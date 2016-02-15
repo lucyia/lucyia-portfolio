@@ -34,7 +34,7 @@ gulp.task('less', function () {
 gulp.task('scripts', function(){
 	return gulp.src([
 			'./node_modules/jquery/dist/jquery.js',			
-			//'./node_modules/bootstrap/dist/js/bootstrap.js',
+			'./node_modules/bootstrap/dist/js/bootstrap.js',
 			'./node_modules/d3/d3.js',
 			'./js/*.js'
 			])

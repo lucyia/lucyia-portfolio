@@ -24,3 +24,26 @@
 #index-navbar{
 	position: absolute;
 }
+
+@media (max-width: @screen-xs-max) {
+	#index-navbar{
+		width: 100%;
+		left: 0 !important;
+		display: inline-block !important;	
+	}
+	#index-toggle{
+		display: none;
+	}
+	.navbar-nav>li{
+		margin: 10px 0px 0px 30px;
+	}
+}
+
+@media (min-width: @screen-xs-max){
+	#index-navbar{
+		display: none;
+	}
+	#index-toggle{
+		display: inline-block;
+	}
+}
