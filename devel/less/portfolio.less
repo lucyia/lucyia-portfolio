@@ -1,0 +1,51 @@
+.triangle{
+	display: block;
+	width: 100%;
+	height: 500px;
+	background-position: center;
+	background-repeat: no-repeat;
+	position: relative;
+	z-index: 10;
+}
+
+.triangle-code{
+	background-image: url(/img/code_triangle_white.png);
+}
+
+.triangle-design{
+	background-image: url(/img/design_triangle_white.png);
+}
+
+.triangle-paint{
+	background-image: url(/img/paint_triangle_white.png);
+}
+
+.triangle-back{
+	display: block;
+	width: 90%;
+	height: 400px;
+	background-repeat: no-repeat;
+	position: relative;
+	z-index: 0;
+	background-position: 40px 110px;
+	background-size: 250px auto;
+
+	.transition(all 0.5s ease-in-out);
+
+	&:hover{
+		background-size: 350px auto;
+		background-position: 20px 90px;		
+	}
+}
+
+.triangle-back-code{
+	background-image: url(/img/code_triangle_back.png);
+}
+
+.triangle-back-design{
+	background-image: url(/img/design_triangle_back.png);
+}
+
+.triangle-back-paint{
+	background-image: url(/img/paint_triangle_back.png);
+}

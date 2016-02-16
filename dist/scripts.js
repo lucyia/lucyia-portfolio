@@ -21757,7 +21757,7 @@ if (typeof jQuery === 'undefined') {
 				$("#index-navbar").fadeToggle("slow").animate({"left": "0%" }, {duration: "slow", queue: false}, function() {/*done*/});				
 			}
 		});
-	});	
+	});
 })(this, document);
 /**
  * Generates elements defined by path on SVG with hovering effect
