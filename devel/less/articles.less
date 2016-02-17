@@ -1,0 +1,50 @@
+.coming-soon {
+	color: white;
+	font-family: 'Monoton', cursive;
+	font-size: 55px;
+	margin-top: 80px;
+	text-decoration: none;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	transition: all 0.5s;	
+	-webkit-animation: neon 1.5s ease-in-out infinite alternate;
+	-moz-animation: neon 1.5s ease-in-out infinite alternate;
+	animation: neon 1.5s ease-in-out infinite alternate;
+}
+
+.coming-soon:hover {
+	color: @color-main;
+	-webkit-animation: none;
+	-moz-animation: none;
+	animation: none;
+}
+
+/* webkit glow */
+@-webkit-keyframes neon {
+	from {
+		text-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px white, 0 0 40px @color-main, 0 0 70px @color-main, 0 0 80px @color-main, 0 0 100px @color-main, 0 0 150px @color-main;
+	}
+	to {
+		text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white, 0 0 20px @color-main, 0 0 35px @color-main, 0 0 40px @color-main, 0 0 50px @color-main, 0 0 75px @color-main;
+	}
+}
+
+/* mozilla glow */
+@-moz-keyframes neon {
+	from {
+		text-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px white, 0 0 40px @color-main, 0 0 70px @color-main, 0 0 80px @color-main, 0 0 100px @color-main, 0 0 150px @color-main;
+	}
+	to {
+		text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white, 0 0 20px @color-main, 0 0 35px @color-main, 0 0 40px @color-main, 0 0 50px @color-main, 0 0 75px @color-main;
+	}
+}
+
+/* glow effect */
+@keyframes neon {
+	from {
+		text-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px white, 0 0 40px @color-main, 0 0 70px @color-main, 0 0 80px @color-main, 0 0 100px @color-main, 0 0 150px @color-main;
+	}
+	to {
+		text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white, 0 0 20px @color-main, 0 0 35px @color-main, 0 0 40px @color-main, 0 0 50px @color-main, 0 0 75px @color-main;
+	}
+}
