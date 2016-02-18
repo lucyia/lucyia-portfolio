@@ -26,17 +26,38 @@ body {
 
 h1{
 	margin-left: 30px;
-    font-weight: 900;
-    padding-left: 5px;
-    border-bottom: 1px solid @color-very-light;
+	padding-left: 5px;
+	border-bottom: 1px solid @color-very-light;
+	font-weight: 900;
+}
+
+h2{
+	margin: 30px 30px 20px 30px;
+	padding-left: 5px;
+	font-weight: 900;	
+}
+
+p{
+	font-weight: 700;
+	color: @color-light;
+	margin-left: 30px;
+	padding-left: 5px;
+}
+
+a{
+	color: @color-main;	
+
+	&:hover{
+		color: @color-design;
+	}
 }
 
 footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 50px;
-  padding: 15px 0 0 0;
-  background-color: @color-very-light;
-  color: @color-light;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 50px;
+	padding: 15px 0 0 0;
+	background-color: @color-very-light;
+	color: @color-light;
 }
