@@ -2,3 +2,68 @@
 	margin: 0 20px;
 	padding-top: 15px;	
 }
+
+.social{
+	height: 100px;
+	width: 100%;
+	padding-left: 200px;
+}
+
+.social-triangle-group{
+	float: left;
+	height: 100px;
+	width: 100px;    
+}
+
+.social-icon{
+	position: relative;
+	display: block;
+	z-index: 0;
+	width: 100px;
+	height: 100px;
+	background-repeat: no-repeat;	
+	background-position: center;
+	background-size: 80px auto;
+}
+
+.social-left{
+	.social-triangle-back{
+		-webkit-transform: rotate(180deg);
+		-moz-transform: rotate(180deg);
+		-ms-transform: rotate(180deg);
+		-o-transform: rotate(180deg);
+		transform: rotate(180deg);
+
+		.social-icon-lin{
+			background-image: url(/img/social_lin.png);
+			-webkit-transform: rotate(180deg);
+			-moz-transform: rotate(180deg);
+			-ms-transform: rotate(180deg);
+			-o-transform: rotate(180deg);
+			transform: rotate(180deg);
+		}
+
+		.social-icon-twit{
+			background-image: url(/img/social_twit.png);
+			-webkit-transform: rotate(180deg);
+			-moz-transform: rotate(180deg);
+			-ms-transform: rotate(180deg);
+			-o-transform: rotate(180deg);
+			transform: rotate(180deg);
+		}
+	}
+}
+
+.social-icon-ghub{
+	background-image: url(/img/social_ghub.png);
+}
+
+.social-triangle-back{
+	background-image: url(/img/triangle_small.png);
+}
+
+.social-link{
+	float: left;
+	font-size: 25px;
+	margin: 33px 0 0 10px;
+}
