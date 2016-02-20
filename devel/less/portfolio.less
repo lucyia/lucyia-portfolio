@@ -7,8 +7,7 @@
 		height: 450px;
 		background-position: center;
 		background-repeat: no-repeat;
-		position: relative;
-		z-index: 10;
+		position: relative;		
 	}
 
 	.triangle-code{
@@ -20,23 +19,21 @@
 	}
 
 	.triangle-paint{
-		background-image: url(/img/paint_triangle_white.png);
+		background-image: url(/img/paint_triangle_white.png);		
+	}
+
+	.triangle-front{
+		z-index: 10;
+		background-size: 200px auto;
 	}
 
 	.triangle-back{
-		display: block;
-		width: 100%;
-		height: 400px;
-		background-repeat: no-repeat;
-		position: relative;
 		z-index: 0;
-		background-position: 55% 90%;
 		background-size: 250px auto;
 
 		.transition(all 0.5s ease-in-out);
 
-		&:hover{	
-			background-position: 40% 90%;
+		&:hover{			
 			background-size: 300px auto;
 		}
 	}
