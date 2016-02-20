@@ -1,79 +1,100 @@
-.triangle{
-	display: block;
-	width: 100%;
-	height: 500px;
-	background-position: center;
-	background-repeat: no-repeat;
-	position: relative;
-	z-index: 10;
-}
+.portfolio{
+	margin-bottom: 80px;
 
-.triangle-code{
-	background-image: url(/img/code_triangle_white.png);
-}
-
-.triangle-design{
-	background-image: url(/img/design_triangle_white.png);
-}
-
-.triangle-paint{
-	background-image: url(/img/paint_triangle_white.png);
-}
-
-.triangle-back{
-	display: block;
-	width: 90%;
-	height: 400px;
-	background-repeat: no-repeat;
-	position: relative;
-	z-index: 0;
-	background-position: 55% 90%;
-	background-size: 250px auto;
-
-	.transition(all 0.5s ease-in-out);
-
-	&:hover{	
-		background-position: 40% 90%;
-		background-size: 300px auto;
-	}
-}
-
-.triangle-back-code{
-	background-image: url(/img/code_triangle_back.png);
-}
-
-.triangle-back-design{
-	background-image: url(/img/design_triangle_back.png);
-}
-
-.triangle-back-paint{
-	background-image: url(/img/paint_triangle_back.png);
-}
-
-@media (max-width: @screen-sm-max) {
 	.triangle{
+		display: block;
+		width: 100%;
 		height: 450px;
-	}
-	.triangle-back{
 		background-position: center;
+		background-repeat: no-repeat;
+		position: relative;
+		z-index: 10;
+	}
 
-		background-position: 52% 75%;
+	.triangle-code{
+		background-image: url(/img/code_triangle_white.png);
+	}
+
+	.triangle-design{
+		background-image: url(/img/design_triangle_white.png);
+	}
+
+	.triangle-paint{
+		background-image: url(/img/paint_triangle_white.png);
+	}
+
+	.triangle-back{
+		display: block;
+		width: 100%;
+		height: 400px;
+		background-repeat: no-repeat;
+		position: relative;
+		z-index: 0;
+		background-position: 55% 90%;
 		background-size: 250px auto;
 
 		.transition(all 0.5s ease-in-out);
 
-		&:hover{
-			background-position: 50% 70%;
+		&:hover{	
+			background-position: 40% 90%;
 			background-size: 300px auto;
 		}
 	}
-	.portfolio{
-		.col-md-4{
-			height: 400px;
-		
-			&:last-of-type{
-				margin-bottom: 100px; 
+
+	.triangle-back-code{
+		background-image: url(/img/code_triangle_back.png);
+	}
+
+	.triangle-back-design{
+		background-image: url(/img/design_triangle_back.png);
+	}
+
+	.triangle-back-paint{
+		background-image: url(/img/paint_triangle_back.png);
+	}
+
+	@media (max-width: @screen-sm-max) {
+		.triangle{
+			height: 450px;
+		}
+		.triangle-back{
+			background-position: center;
+
+			background-position: 52% 75%;
+			background-size: 250px auto;
+
+			.transition(all 0.5s ease-in-out);
+
+			&:hover{
+				background-position: 50% 70%;
+				background-size: 300px auto;
+			}
+		}
+		.portfolio{
+			.col-md-4{
+				height: 400px;
+			
+				&:last-of-type{
+					margin-bottom: 100px; 
+				}
 			}
 		}
 	}
+
+	@media (min-width: @screen-sm-max) and (max-width: @screen-md-max) {
+		.triangle{
+			background-size: 300px;
+			height: 400px;
+		}
+
+		.triangle-back{
+			background-size: 200px auto;
+			height: 350px;
+
+			&:hover{			
+				background-size: 250px auto;
+			}
+		}
+	}
+
 }
