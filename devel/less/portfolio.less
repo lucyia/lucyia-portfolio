@@ -1,10 +1,8 @@
 .portfolio{
-	margin-bottom: 80px;
-
 	.triangle{
 		display: block;
 		width: 100%;
-		height: 450px;
+		height: 400px;
 		background-position: center;
 		background-repeat: no-repeat;
 		position: relative;		
@@ -24,16 +22,16 @@
 
 	.triangle-front{
 		z-index: 10;
-		background-size: 200px auto;
+		background-size: 300px auto;
 	}
 
 	.triangle-back{
-		z-index: 0;
+		z-index: 0;		
 		background-size: 250px auto;
 
 		.transition(all 0.5s ease-in-out);
 
-		&:hover{			
+		&:hover{
 			background-size: 300px auto;
 		}
 	}
@@ -49,36 +47,32 @@
 	.triangle-back-paint{
 		background-image: url(/img/paint_triangle_back.png);
 	}
+}
 
-	@media (max-width: @screen-sm-max) {
+@media (max-width: @screen-sm-max) {
+	.portfolio{
+		margin: 50px auto;
+
 		.triangle{
-			height: 450px;
+			height: 250px;
 		}
-		.triangle-back{
-			background-position: center;
 
-			background-position: 52% 75%;
-			background-size: 250px auto;
-
-			.transition(all 0.5s ease-in-out);
+		.triangle-back{			
+			background-size: 200px auto;
 
 			&:hover{
-				background-position: 50% 70%;
-				background-size: 300px auto;
+				background-size: 250px auto;
 			}
 		}
-		.portfolio{
-			.col-md-4{
-				height: 400px;
-			
-				&:last-of-type{
-					margin-bottom: 100px; 
-				}
-			}
-		}
-	}
 
-	@media (min-width: @screen-sm-max) and (max-width: @screen-md-max) {
+		.triangle-front{
+			background-size: 250px auto;
+		}
+	}	
+}
+
+@media (min-width: @screen-sm-max) and (max-width: @screen-md-max) {
+	.portfolio{
 		.triangle{
 			background-size: 300px;
 			height: 400px;
@@ -93,5 +87,4 @@
 			}
 		}
 	}
-
 }
