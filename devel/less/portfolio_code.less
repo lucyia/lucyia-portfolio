@@ -1,0 +1,95 @@
+.code-text{
+	color: @color-code;
+}
+
+.row{
+	&:first-of-type{
+		margin-top: 80px;
+	}
+}
+
+.code{
+
+	.col-md-6{
+		margin-top: -100px;
+
+		.triangle-tooltip{
+			top: 150px;
+			left: 45px;
+		}
+	}
+
+	.col-md-12{
+		.triangle-tooltip{
+			top: 30px;
+			left: 35px;
+		}	
+	}
+
+	.triangle-tooltip{
+		position: absolute;
+		display: none;
+		padding: 10px 15px 15px 10px;
+		background-color: @color-code;
+		color: @color-very-light;
+		font-size: 16px;
+		font-weight: 900;
+		z-index: 1000;
+
+		&::after{
+			content: ' >>';
+		}
+
+		&:hover{
+			text-decoration: underline;
+		}
+	}
+
+	.triangle{
+		display: block;
+		position: relative;
+		width: 250px;
+		height: 220px;
+		margin:	0 auto;
+		background-position: center;
+		background-repeat: no-repeat;
+
+		&:hover{
+			.triangle-tooltip{
+				display: table;
+			}
+		}		
+	}
+
+	.triangle-front{
+		z-index: 10;
+	}
+
+	.triangle-front-rotated{
+		-ms-transform: rotate(180deg);
+		-webkit-transform: rotate(180deg);
+		transform: rotate(180deg);
+	}
+
+	.triangle-code{
+		background-image: url(/img/triangle_blue.png);
+		background-size: 300px;
+	}
+
+	.triangle-back{
+		z-index: 0;		
+		background-size: 250px auto;
+		background-position: center;		
+
+		.transition(all 0.5s ease-in-out);
+
+		&:hover{			
+			background-size: 300px auto;
+		}
+	}
+
+	.triangle-back-project-habit{
+		background-image: url(/img/project_habit.png);
+	}
+
+}
