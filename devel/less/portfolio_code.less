@@ -2,13 +2,16 @@
 	color: @color-code;
 }
 
-.row{
-	&:first-of-type{
-		margin-top: 80px;
-	}
-}
-
 .code{
+
+	&.row{
+		&:first-of-type{
+			margin-top: 80px;
+		}
+		&:last-of-type{
+			margin-bottom: 50px;
+		}
+	}
 
 	.col-md-6{
 		margin-top: -100px;
@@ -28,7 +31,7 @@
 
 	.triangle-tooltip{
 		position: absolute;
-		display: none;
+		display: table;
 		padding: 10px 15px 15px 10px;
 		background-color: @color-code;
 		color: @color-very-light;
@@ -53,12 +56,6 @@
 		margin:	0 auto;
 		background-position: center;
 		background-repeat: no-repeat;
-
-		&:hover{
-			.triangle-tooltip{
-				display: table;
-			}
-		}		
 	}
 
 	.triangle-front{
@@ -92,4 +89,87 @@
 		background-image: url(/img/project_habit.png);
 	}
 
+}
+
+@media (min-width: @screen-xs-max) and (max-width: @screen-sm-max) {
+	.code{
+		.col-md-6{
+			margin-top: 0;
+		}
+
+		&:nth-child(even){
+			&>div:nth-child(1){
+				&>span{
+					margin-left: 15%;
+				}
+			}
+
+			&>div:nth-child(2){
+				&>span{
+					margin-left: 55%;
+					margin-top: -10%;
+					z-index: 20;
+				}
+			}
+
+			&>div:nth-child(3){
+				&>span{
+					margin-left: 15%;
+					margin-top: -5%;
+				}
+			}
+		}
+
+		&:nth-child(odd){
+			&>div:nth-child(1){
+				&>span{
+					margin-left: 55%;
+				}
+			}
+
+			&>div:nth-child(2){
+				&>span{
+					margin-left: 15%;
+					margin-top: -10%;
+					z-index: 20;
+				}
+			}
+
+			&>div:nth-child(3){
+				&>span{
+					margin-left: 55%;
+					margin-top: -5%;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: @screen-xs-max) {
+	.code{
+		.col-md-6{			
+			margin-top: 0px;
+		}
+
+		.col-sm-12 {
+			margin: 0;
+
+			&>span{
+				margin: 0 auto;
+			}
+		}
+
+		&>div:nth-child(1){
+			margin-bottom: 30px;
+			margin-left: 9px;
+		}
+
+		&>div:nth-child(2){
+			margin-bottom: 40px;
+		}
+
+		&>div:nth-child(3){
+			margin-bottom: 50px;
+		}
+	}
 }
