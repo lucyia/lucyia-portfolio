@@ -10,7 +10,7 @@ gulp.task('default', ['watch']);
 gulp.task('watch', ['sync', 'less', 'scripts'], function(){
 	gulp.watch('./*/*.less', ['less']);
 	gulp.watch('./*/*.js', ['scripts']);
-	gulp.watch('../dist/index.html', sync.reload);	
+	gulp.watch('../dist/*.html', sync.reload);	
 });
 
 gulp.task('sync', function(){
