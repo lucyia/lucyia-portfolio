@@ -10,7 +10,7 @@ gulp.task('default', ['watch']);
 gulp.task('watch', ['sync', 'less', 'scripts'], function(){
 	gulp.watch('./*/*.less', ['less']);
 	gulp.watch('./*/*.js', ['scripts']);
-	gulp.watch('../dist/*.html', sync.reload);	
+	gulp.watch('../dist/*/*.html', sync.reload);	
 });
 
 gulp.task('sync', function(){
@@ -33,7 +33,8 @@ gulp.task('less', function () {
 
 gulp.task('scripts', function(){
 	return gulp.src([
-			'./node_modules/jquery/dist/jquery.js',			
+			'./node_modules/jquery/dist/jquery.js',
+			'./node_modules/jquery-colorbox/jquery.colorbox.js',
 			'./node_modules/bootstrap/dist/js/bootstrap.js',
 			'./node_modules/bootstrap-validator/dist/validator.js',
 			'./node_modules/d3/d3.js',

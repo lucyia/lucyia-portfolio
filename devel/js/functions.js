@@ -1,5 +1,6 @@
 (function(window, document, undefined){
 	$(document).ready(function(){
+
 		// toggle button for showing/hiding navigation in index
 		$("#index-toggle").on("click", function(){
 			if ($("#index-navbar").is(":visible")) {
@@ -8,5 +9,9 @@
 				$("#index-navbar").fadeToggle("slow").animate({"left": "0%" }, {duration: "slow", queue: false}, function() {/*done*/});				
 			}
 		});
+
+		// colorbox image gallery
+		jQuery('a.gallery').colorbox({maxWidth:'90%', maxHeight:'90%', opacity:0.5 , rel:'group1' });
+
 	});
 })(this, document);
