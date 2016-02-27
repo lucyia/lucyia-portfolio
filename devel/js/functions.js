@@ -11,7 +11,13 @@
 		});
 
 		// colorbox image gallery
-		jQuery('a.gallery').colorbox({maxWidth:'90%', maxHeight:'90%', opacity:0.5 , rel:'group1' });
+		jQuery('a.gallery').colorbox({
+			maxWidth:'90%', 
+			maxHeight:'90%', 
+			opacity:0.5 , 
+			rel:'group1',
+			transition:	"elastic"
+		});
 
 	});
 })(this, document);
