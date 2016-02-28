@@ -12,34 +12,41 @@
 	.col-md-6{
 		margin-top: -100px;
 
-		.triangle-tooltip{
-			top: 150px;
+		.triangle-heading{
+			top: 125px;
 			left: 45px;
 		}
 	}
 
 	.col-md-12{
-		.triangle-tooltip{
-			top: 30px;
-			left: 35px;
+		.triangle-heading{
+			top: -5px;
+			left: 40px;
 		}	
 	}
 
-	.triangle-tooltip{
+	.triangle-heading{
 		position: absolute;
 		display: table;
-		padding: 10px 15px 15px 10px;		
-		color: @color-very-light;
-		font-size: 16px;
-		font-weight: 900;
+		padding: 0 10px 10px 10px;
 		z-index: 1000;
 
-		&::after{
-			content: ' >>';
+		&>a{
+			color: @color-very-light;
+			font-size: 16px;
+			font-weight: 900;
+			text-decoration: none;
+
+			&:hover{
+				text-decoration: underline;
+			}
 		}
 
-		&:hover{
-			text-decoration: underline;
+		&::after{
+			font-family: 'Glyphicons Halflings';
+			font-size: 10px;
+			content: ' \e258';
+			color: @color-very-light;
 		}
 	}
 
