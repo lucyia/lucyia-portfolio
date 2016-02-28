@@ -62,121 +62,129 @@
 	    <![endif]-->
 	</head>
 	
-	<body>
-		<header>
-			<div class="container">
-				<nav class="navbar navbar-default">
-					<div class="container-fluid">
-						<!-- collapsed nav links -->
-						<div class="navbar-header">
-							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-								<span class="sr-only">Toggle navigation</span>
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-							</button>		      
-						</div>
+	<body>		
+		<div class="container contact">
+			<a class="brand-lg" href="#">
+				<img alt="logo lucyia" src="/img/lucyia_logo.png">
+			</a>
 
-						<!-- nav links -->
-						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-							<ul class="nav navbar-nav">
-								<li>
-									<a href="/portfolio.html">portfolio
-									</a>
-								</li>
-								<li>
-									<a href="/articles.html">articles
-									</a>
-								</li>
-								<li>
-									<a href="/about.html">about</a>
-								</li>
-								<li class="active">
-									<a href="/contact.html">contact
-										<span class="sr-only">(current)</span>
-									</a>
-								</li>
-							</ul>
-						</div><!-- /.navbar-collapse -->
-					</div><!-- /.container-fluid -->
-				</nav>
-			</div>
-		</header>
+			<nav class="navbar navbar-default">
+				<div class="container-fluid">
+					<!-- collapsed nav links -->
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="#">
+							<img alt="logo lucyia" src="/img/lucyia_logo.png">
+						</a>
+					</div>
 
-		<div class="container">
-			<h1>contact me</h1>
-			<div class="row contact-form">
-				<div class="col-md-4 col-sm-12">
-					<form name="contactform" method="post" action="send_form_email.php" data-toggle="validator" role="form">
-						<div class="row">
-							<div class="form-group col-xs-6">
-								<input type="text" class="form-control" name="first_name" id="inputName" placeholder="First name" required>
+					<!-- nav links -->
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						<ul class="nav navbar-nav">
+							<li>
+								<a href="/portfolio.html">portfolio</a>
+							</li>
+							<li>
+								<a href="/articles.html">articles</a>
+							</li>
+							<li>
+								<a href="/about.html">about</a>
+							</li>
+							<li class="active">
+								<a href="/contact.html">contact
+									<span class="sr-only">(current)</span>
+								</a>
+							</li>
+						</ul>
+					</div><!-- /.navbar-collapse -->
+				</div><!-- /.container-fluid -->
+			</nav>
+
+			<header>
+				<h1>contact me</h1>			
+			</header>
+
+			<section>
+				<div class="row contact-form">
+					<div class="col-md-4 col-sm-12">
+						<form name="contactform" method="post" action="send_form_email.php" data-toggle="validator" role="form">
+							<div class="row">
+								<div class="form-group col-xs-6">
+									<input type="text" class="form-control" name="first_name" id="inputName" placeholder="First name" required>
+								</div>
+								<div class="form-group col-xs-6 padding-left-no">
+									<input type="text" class="form-control" name="last_name" id="inputName2" placeholder="Last name" required>
+								</div>
 							</div>
-							<div class="form-group col-xs-6 padding-left-no">
-								<input type="text" class="form-control" name="last_name" id="inputName2" placeholder="Last name" required>
+							<div class="row">
+								<div class="form-group col-xs-12 margin-bottom-five">
+									<input type="email" class="form-control" name="email" id="inputEmail" placeholder="Email" data-error="This email address is invalid, please enter a valid address" required>
+									<div class="help-block with-errors"></div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="form-group col-xs-12">
+									<input type="text" name="telephone" class="form-control" placeholder="Phone number">
+								</div>
+							</div>
+							<div class="row">
+								<div class="form-group col-xs-12">
+									<textarea name="message" class="form-control" placeholder="Message" rows="6" required></textarea>
+								</div>
+							</div>
+							<div class="row">
+								<div class="form-group col-xs-12">
+									<input type="submit" value="Send message" class="btn btn-primary">
+								</div>
+							</div>						
+						</form>
+					</div>
+					<div class="col-md-8 col-sm-12 social-group">
+						<div class="social social-lin social-left">
+							<div class="social-triangle-group">
+								<span class="social-icon social-triangle-back">
+									<span class="social-icon social-icon-lin"></span>
+								</span>
+							</div>
+							<div class="social-link">
+								<a href="">linkedin.com/in/lucyia</a>
 							</div>
 						</div>
-						<div class="row">
-							<div class="form-group col-xs-12 margin-bottom-five">
-								<input type="email" class="form-control" name="email" id="inputEmail" placeholder="Email" data-error="This email address is invalid, please enter a valid address" required>
-								<div class="help-block with-errors"></div>
+						<div class="social social-ghub">
+							<div class="social-triangle-group">
+								<span class="social-icon social-triangle-back">
+									<span class="social-icon social-icon-ghub"></span>
+								</span>
+							</div>
+							<div class="social-link">
+								<a href="">github.com/lucyia</a>
 							</div>
 						</div>
-						<div class="row">
-							<div class="form-group col-xs-12">
-								<input type="text" name="telephone" class="form-control" placeholder="Phone number">
+						<div class="social social-twit social-left">
+							<div class="social-triangle-group">
+								<span class="social-icon social-triangle-back">
+									<span class="social-icon social-icon-twit"></span>
+								</span>
+							</div>
+							<div class="social-link">
+								<a href="">twitter.com/_lucyia</a>
 							</div>
 						</div>
-						<div class="row">
-							<div class="form-group col-xs-12">
-								<textarea name="message" class="form-control" placeholder="Message" rows="6" required></textarea>
-							</div>
-						</div>
-						<div class="row">
-							<div class="form-group col-xs-12">
-								<input type="submit" value="Send message" class="btn btn-primary">
-							</div>
-						</div>						
-					</form>
+					</div>
 				</div>
-				<div class="col-md-8 col-sm-12 social-group">
-					<div class="social social-lin social-left">
-						<div class="social-triangle-group">
-							<span class="social-icon social-triangle-back">
-								<span class="social-icon social-icon-lin"></span>
-							</span>
-						</div>
-						<div class="social-link">
-							<a href="">linkedin.com/in/lucyia</a>
-						</div>
-					</div>
-					<div class="social social-ghub">
-						<div class="social-triangle-group">
-							<span class="social-icon social-triangle-back">
-								<span class="social-icon social-icon-ghub"></span>
-							</span>
-						</div>
-						<div class="social-link">
-							<a href="">github.com/lucyia</a>
-						</div>
-					</div>
-					<div class="social social-twit social-left">
-						<div class="social-triangle-group">
-							<span class="social-icon social-triangle-back">
-								<span class="social-icon social-icon-twit"></span>
-							</span>
-						</div>
-						<div class="social-link">
-							<a href="">twitter.com/_lucyia</a>
-						</div>
-					</div>
-				</div>
-			</div>
+			</section>
 		</div>
+
 		<footer>
 			<div class="container">
 				<div class="text-right">design & code by <a href="lucyia.com">lucyia</a></div>
 			</div>
 		</footer>
+		
 	</body>
 </html>

@@ -2,20 +2,12 @@
 	background-color: transparent;
 	border: 0px solid transparent;
 
-	.container-fluid{
-		padding-left: 0;
-
-		.navbar-collapse{
-			padding-left: 0;
-		}
+	&-toggle{
+		margin-right: 0;
 	}
 }
 
 .navbar-nav {
-	&>li{
-		margin: 0 50px 0 0;
-	}
-
 	a{
 		font-weight: bold;		
 		color: @color-light;
@@ -32,5 +24,73 @@
 		color: @color-main !important;
 		background-color: transparent !important;
 		border-top: 7px solid @color-main;
+	}
+}
+
+@media (min-width: 1399px){
+	.navbar-brand{
+		display: none;
+	}
+
+	.brand-lg{
+		width: 8%;
+		display: block;
+		position: absolute;
+		margin-left: -11%;
+		margin-top: 55px;
+
+		&>img{
+			max-width: 100%;
+			max-height: 100px;
+		}
+	}
+}
+
+@media (min-width: 1400px) and (max-width: 1500px) {
+	.brand-lg{
+		margin-left: -8%;
+
+		&>img{
+			max-width: 90%;
+			max-height: 100px;
+		}
+	}
+}
+
+@media (max-width: 1400px){
+	.navbar-brand{
+		display: block;
+
+		&>img {
+			display: block;
+			width: 55px;
+			margin-top: -5px;
+		}
+	}
+
+	.brand-lg{
+		display: none;
+	}
+}
+
+@media (max-width: @screen-xs-max){
+	.navbar-brand{
+		padding-left: 0;
+	}
+}
+
+@media (min-width: @screen-xs-max){
+	.container-fluid{
+		padding-left: 0;
+
+		.navbar-collapse{
+			padding-left: 0;
+		}
+	}
+
+	.navbar-nav{
+		&>li{
+			margin: 0 50px 0 0;
+		}
 	}
 }

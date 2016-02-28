@@ -6,7 +6,7 @@
 			if ($("#index-navbar").is(":visible")) {
 				$("#index-navbar").fadeToggle("slow").animate({"left": "70%" }, {duration: "slow", queue: false}, function() {/*done*/});
 			} else {				
-				$("#index-navbar").fadeToggle("slow").animate({"left": "0%" }, {duration: "slow", queue: false}, function() {/*done*/});				
+				$("#index-navbar").fadeToggle("slow").animate({"left": "70px" }, {duration: "slow", queue: false}, function() {/*done*/});				
 			}
 		});
 
