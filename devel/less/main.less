@@ -63,6 +63,38 @@ a{
 	}
 }
 
+.btn-default{
+	border: 0 solid @color-very-light;
+	background-color: transparent;
+
+	&.btn-slider{
+		font-size: 40px;
+		color: darken(@color-very-light, 10%);
+
+		&:hover{
+			background-color: transparent;
+		}
+
+		&.btn-code{
+			&:hover{
+				color: @color-code;
+			}
+		}
+
+		&.btn-design{
+			&:hover{
+				color: @color-design;
+			}
+		}
+
+		&.btn-paint{
+			&:hover{
+				color: @color-paint;
+			}
+		}
+	}	
+}
+
 footer{
 	position: absolute;
 	bottom: 0;
