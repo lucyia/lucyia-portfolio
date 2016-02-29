@@ -24,7 +24,7 @@ gulp.task('sync', function(){
 gulp.task('less', function () {
 	return gulp.src('./less/style.less')		
 		.pipe(less())
-		.pipe(cssnano())
+		//.pipe(cssnano())
 		.pipe(gulp.dest('../dist'))
 		.pipe(sync.reload({
 			stream: true
@@ -33,7 +33,7 @@ gulp.task('less', function () {
 
 gulp.task('scripts', function(){
 	return gulp.src([
-			'./node_modules/jquery/dist/jquery.js',
+			'./node_modules/jquery/dist/jquery.js',			
 			'./node_modules/jquery-colorbox/jquery.colorbox.js',
 			'./node_modules/bootstrap/dist/js/bootstrap.js',
 			'./node_modules/bootstrap-validator/dist/validator.js',

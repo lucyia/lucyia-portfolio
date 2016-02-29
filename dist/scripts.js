@@ -23173,14 +23173,28 @@ if (typeof jQuery === 'undefined') {
 
 		// colorbox image gallery
 		jQuery('a.gallery').colorbox({
-			maxWidth:'90%', 
-			maxHeight:'90%', 
-			opacity:0.5 , 
+			maxWidth:'95%', 
+			maxHeight:'95%', 
+			opacity:0.75, 
 			rel:'group1',
 			transition:	"elastic"
 		});
 
+		// key listeners for sliders on project pages
+		$(document).keydown(function(e){
+			if (e.keyCode == 37) {
+				// left arrow pressed
+				window.location.href = getNewLocation('previous');
+			} else if (e.keyCode == 39) {
+				// right arrow pressed
+				window.location.href = getNewLocation('next');
+			}
+		});
 	});
+
+	function getNewLocation(page) {
+		return $('.slider-'+page+'>a').attr('href');
+	}
 })(this, document);
 /**
  * Generates elements defined by path on SVG with hovering effect
