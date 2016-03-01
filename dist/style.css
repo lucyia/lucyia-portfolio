@@ -7249,6 +7249,9 @@ footer {
 .paint-text {
   color: #BB1E2C;
 }
+.paint .col-md-6 {
+  margin-top: 0 !important;
+}
 .paint .triangle-heading {
   background-color: #BB1E2C;
 }

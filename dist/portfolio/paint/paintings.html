@@ -8,20 +8,20 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
 		<!-- Basic info -->
-		<title>lucyia | paint</title>
+		<title>lucyia | Paintings</title>
 		<meta name="language" content="english">
 		<meta name="description" content="Personal portfolio of Lucia Kocincova a.k.a. lucyia, front-end developer and graphic designer. Code, Design, Paint.">
 		<meta name="keywords" content="lucyia, portfolio, graphic design, front-end, visualization, paintings, drawings, articles">
 		<meta name="robots" content="index, follow">
 
 		<!-- Minified style sheet; including Bootstrap and custom css -->
-		<link href="../style.css" rel="stylesheet">
+		<link href="/style.css" rel="stylesheet">
 
 		<!-- Font -->
 		<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,900,400italic,700italic' rel='stylesheet' type='text/css'>
 
 		<!-- Minified js scripts; including jQuery, Bootstrap and custom code -->
-		<script src="../scripts-min.js" type="text/javascript"></script>
+		<script src="/scripts-min.js" type="text/javascript"></script>
 
 		<!-- Favicon -->
 		<link rel="apple-touch-icon" sizes="57x57" href="/img/favicon/apple-icon-57x57.png">
@@ -62,7 +62,7 @@
 	</head>
 	
 	<body>		
-		<div class="container triangles">
+		<div class="container project">
 			<a class="brand-lg" href="#">
 				<img alt="logo lucyia" src="/img/lucyia_logo.png">
 			</a>
@@ -105,35 +105,60 @@
 			</nav>
 
 			<header>
-				<h1><span class="paint-text">paint</span> projects</h1>
+				<h1><span class="paint-text">paint</span> projects</h1>	
 			</header>
-			
-			<div class="row paint">
-				<section>
-					<div class="col-md-6 col-sm-12">
-						<div class="triangle triangle-back triangle-back-project-blue">
-							<h2 class="triangle-heading">
-								<a href="/portfolio/paint/paintings.html">
-									Paintings
-								</a>
-							</h2>
-							<div class="triangle triangle-front-rotated triangle-paint"></div>
-						</div>
+
+			<article>
+				<header>
+					<div class="slider slider-previous">
+						<a href="/portfolio/paint/sketches.html" class="btn btn-default btn-slider btn-paint" title="previous project">
+							<span class="glyphicon glyphicon-chevron-left"></span>
+						</a>
 					</div>
-				</section>
-				<section>
-					<div class="col-md-6 col-sm-12">
-						<div class="triangle triangle-back triangle-back-project-hands">
-							<h2 class="triangle-heading">
-								<a href="/portfolio/paint/sketches.html">
-									Sketches
-								</a>
-							</h2>
-							<div class="triangle triangle-front-rotated triangle-paint"></div>
-						</div>
+					<h2>Paintings</h2>
+					<div class="slider slider-next">
+						<a href="/portfolio/paint/sketches.html" class="btn btn-default btn-slider btn-paint pull-right" title="next project">
+							<span class="glyphicon glyphicon-chevron-right"></span>
+						</a>
 					</div>
-				</section>
-			</div>
+				</header>
+
+				<div class="row project-row">
+					<section>
+						<div class="col-md-8 col-sm-12">
+							<div class="row project-imgs-wrapper">
+								<div class="col-lg-12">
+									<a class="gallery" href="/img/projects/bluehead.jpg" title="Bluehead">
+										<img src="/img/projects/bluehead.jpg" class="project-img" alt="Acrylic painting on paper" />
+									</a>
+								</div>
+								<div class="col-lg-12">
+									<a class="gallery" href="/img/projects/man.jpg" title="Etched man">
+										<img src="/img/projects/man.jpg" class="project-img" alt="Etched portrait of a man" />
+									</a>
+								</div>
+							</div>
+						</div>
+					</section>
+
+					<section>
+						<div class="col-md-4 col-sm-12">
+							<div class="info">
+								<h3 class="info-heading">about</h3>
+								<p class="info-content">
+									mostly acrylics on mixed media
+								</p>
+								<p class="info-content">
+									(paper, cardboard, wood, plastic)
+								</p>
+								<p class="info-content">
+									in various sizes
+								</p>
+							</div>
+						</div>
+					</section>
+				</div>
+			</article>
 		</div>
 		
 		<footer>
