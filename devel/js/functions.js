@@ -19,12 +19,12 @@
 			transition:	"elastic"
 		});
 
-		// key listeners for sliders on project pages
+		// key listeners for sliders on project pages -- colorbox cannot be opened
 		$(document).keydown(function(e){
-			if (e.keyCode == 37) {
+			if (e.keyCode == 37 && ($('#cboxOverlay').css('display')==="none")) {
 				// left arrow pressed
 				window.location.href = getNewLocation('previous');
-			} else if (e.keyCode == 39) {
+			} else if (e.keyCode == 39 && ($('#cboxOverlay').css('display')==="none")) {
 				// right arrow pressed
 				window.location.href = getNewLocation('next');
 			}

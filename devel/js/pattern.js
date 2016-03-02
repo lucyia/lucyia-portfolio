@@ -64,11 +64,17 @@
 							.attr('stroke', '#111111')
 							.attr('stoke-width', 1)
 							.style('opacity', 0.8)
+							.style('cursor', 'pointer')
 							.on('mouseover', function(){
 								d3.select(this)					
 									.transition()
 									.style('opacity', 0)
 									.duration(500);
+								
+								d3.select(this)
+									.on('click', function(){
+										window.location.href = '/portfolio.html';
+									});
 							})
 							.on('mouseout', function(){
 								d3.select(this)					
