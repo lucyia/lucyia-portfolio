@@ -143,61 +143,71 @@ if(isset($_POST['email'])) {
 	</head>
 	
 	<body>
-		<header>
-			<div class="container">
-				<nav class="navbar navbar-default">
-					<div class="container-fluid">
-						<!-- collapsed nav links -->
-						<div class="navbar-header">
-							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-								<span class="sr-only">Toggle navigation</span>
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-								<span class="icon-bar"></span>
-							</button>		      
-						</div>
-
-						<!-- nav links -->
-						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-							<ul class="nav navbar-nav">
-								<li>
-									<a href="/portfolio.html">portfolio
-									</a>
-								</li>
-								<li>
-									<a href="/articles.html">articles
-									</a>
-								</li>
-								<li>
-									<a href="/about.html">about</a>
-								</li>
-								<li class="active">
-									<a href="/contact.html">contact
-										<span class="sr-only">(current)</span>
-									</a>
-								</li>
-							</ul>
-						</div><!-- /.navbar-collapse -->
-					</div><!-- /.container-fluid -->
-				</nav>
-			</div>
-		</header>
-
 		<div class="container">
-			<h1>contact</h1>
-			<h2>thank you</h2>
-			<div class="row">
-				<div class="col-sm-12 contact-text-success">					
-					<p>I will get in touch with you as soon as possible.</p>
-				</div>
-			</div>
-		</div>
+			<a class="brand-lg" href="#">
+				<img alt="logo lucyia" src="/img/lucyia_logo.png">
+			</a>
 
+			<nav class="navbar navbar-default">
+				<div class="container-fluid">
+					<!-- collapsed nav links -->
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="#">
+							<img alt="logo lucyia" src="/img/lucyia_logo.png">
+						</a>
+					</div>
+
+					<!-- nav links -->
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						<ul class="nav navbar-nav">
+							<li>
+								<a href="/portfolio.html">portfolio</a>
+							</li>
+							<li>
+								<a href="/articles.html">articles</a>
+							</li>
+							<li>
+								<a href="/about.html">about</a>
+							</li>
+							<li class="active">
+								<a href="/contact.html">contact
+									<span class="sr-only">(current)</span>
+								</a>
+							</li>
+						</ul>
+					</div><!-- /.navbar-collapse -->
+				</div><!-- /.container-fluid -->
+			</nav>
+
+			<header>
+				<h1>contact</h1>
+			</header>
+
+			<article>
+				<header>
+					<h2>thank you</h2>
+				</header>
+
+				<div class="row">
+					<div class="col-sm-12 contact-text-success">
+						<p>I will get in touch with you as soon as possible.</p>
+					</div>
+				</div>				
+			</article>
+		</div>
+		
 		<footer>
 			<div class="container">
-				<div class="text-center">design & code by <a href="lucyia.com">lucyia</a></div>
+				<div class="text-right">design & code by <a href="lucyia.com">lucyia</a></div>
 			</div>
 		</footer>
+
 	</body>
 </html>
 
