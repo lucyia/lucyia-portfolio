@@ -2,7 +2,9 @@
 // the following code was taken from 
 // http://www.freecontactform.com/email_form.php
 // and customized
+
 if(isset($_POST['email'])) {
+	
 	$email_to = "hi@lucyia.com";
 	$email_subject = "Contact form from lucyia.com";
 
@@ -54,12 +56,12 @@ if(isset($_POST['email'])) {
 		died($error_message);
 	}
 
-	$email_message = "".clean_string($first_name)."have sent a message.\n\n";
-
 	function clean_string($string) {
 		$bad = array("content-type","bcc:","to:","cc:","href");
 		return str_replace($bad,"",$string);
 	}
+
+	$email_message = "".clean_string($first_name)." have sent a message.\n\n";
 
 	$email_message .= "First name: \t".clean_string($first_name)."\n";
 	$email_message .= "Last name: \t".clean_string($last_name)."\n";
@@ -93,14 +95,14 @@ if(isset($_POST['email'])) {
 		<meta name="robots" content="index, follow">
 
 		<!-- Minified style sheet; including Bootstrap and custom css -->
-		<link href="style.css" rel="stylesheet">
+		<link href="/style.css" rel="stylesheet">
 
 		<!-- Font -->
 		<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,900,400italic,700italic' rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=Monoton' rel='stylesheet' type='text/css'>
 
 		<!-- Minified js scripts; including jQuery, Bootstrap and custom code -->
-		<script src="scripts-min.js" type="text/javascript"></script>
+		<script src="/scripts-min.js" type="text/javascript"></script>
 
 		<!-- Favicon -->
 		<link rel="apple-touch-icon" sizes="57x57" href="/img/favicon/apple-icon-57x57.png">
