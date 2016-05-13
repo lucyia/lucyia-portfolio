@@ -7246,6 +7246,9 @@ footer {
   background-image: url(/img/main/triangle_green.png);
   background-size: 300px;
 }
+.container > section:first-of-type > .design {
+  margin-top: 165px;
+}
 .paint-text {
   color: #BB1E2C;
 }
