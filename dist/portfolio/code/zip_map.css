@@ -1,0 +1,67 @@
+.vis-box{
+	position: relative !important;
+	width: 750px !important;
+	height: 500px !important;
+}
+.vis-box .options{
+	position: absolute !important;
+	bottom: 0 !important;
+	right: 0 !important;
+	font-family: sans-serif !important;
+	margin: 10px !important;
+}
+.vis-box #zipInput{
+	font-size: 30px !important;
+	font-family: monospace !important;
+	letter-spacing: 7px !important;
+	width: 151px !important;
+	padding: 10px 15px !important;
+}
+.vis-box .info-row{
+	margin: 10px 0 !important;
+}
+.vis-box .info-row>span{
+	font-size: 14px !important;
+}
+.vis-box .color-box-wrapper{
+	margin: 4px 0 0 18px !important;
+}
+.vis-box .color-box{
+	height: 15px !important;
+	width: 11px !important;
+	float: left !important;
+	margin-right: 1px !important;
+	background-color: #dadada; /* cannot be important, will be overriden by script */
+	color: white !important;
+	text-align: center !important;
+	padding: 1px !important;
+	font-size: 11px !important;
+}
+.vis-box .overlay {
+	fill: none !important;
+	pointer-events: all !important;
+	cursor: move !important;
+	cursor: grab !important;
+	cursor: -moz-grab !important;
+	cursor: -webkit-grab !important;
+}
+.vis-box .overlay:active { 
+	cursor: grabbing !important;
+	cursor: -moz-grabbing !important;
+	cursor: -webkit-grabbing !important;
+}
+.vis-box .city-tooltip {
+	position: absolute !important;
+	padding: 5px 10px !important;
+	font: 11px sans-serif !important;
+	font-weight: bold !important;			
+	text-align: center !important;
+	color: white !important;
+	background-color: black !important;
+}
+.vis-box .city-tooltip>p{
+	margin-top: 5px !important;
+	margin-bottom: 5px !important;
+	color: white !important;
+	padding: 0 !important; 
+}
