@@ -1,16 +1,17 @@
 .triangles{
 
-	.row{
-		&:first-of-type{
-			margin-top: 80px;
-		}
-		&:last-of-type{
-			margin-bottom: 50px;
-		}
+	.row:first-of-type .col-md-6,
+	.row:first-of-type .col-md-12{
+		margin-top: 50px;
+	}
+
+	.row:last-of-type .col-md-6, 
+	.row:last-of-type .col-md-12{
+		margin-bottom: 100px;
 	}
 
 	.col-md-6{
-		margin-top: -100px;
+		margin-top: -50px;
 
 		.triangle-heading{
 			top: 125px;
@@ -32,9 +33,9 @@
 		z-index: 1000;
 
 		&>a{
-			color: @color-very-light;
+			color: white;
 			font-size: 16px;
-			font-weight: 900;
+			font-weight: 700;
 			text-decoration: none;
 
 			&:hover{
@@ -46,7 +47,7 @@
 			font-family: 'Glyphicons Halflings';
 			font-size: 10px;
 			content: ' \e258';
-			color: @color-very-light;
+			color: white;
 		}
 	}
 
