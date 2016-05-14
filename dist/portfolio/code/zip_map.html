@@ -133,16 +133,19 @@
 								<div class="col-lg-12">
 									<div class="cleanslate">
 										<div class="vis-box">
+											<a href="https://github.com/lucyia/zip-map-slovakia">
+												<img style="position: absolute; top: 0; left: 0; border: 0;" src="https://camo.githubusercontent.com/567c3a48d796e2fc06ea80409cc9dd82bf714434/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_left_darkblue_121621.png">
+											</a>
 											<div class="vis"></div>
 											<div class="options">
 												<div class="info-row">
 													<input id="zipInput" name="zipcode" type="text" value="" pattern="\d{5}" maxlength="5"></input>
 												</div>
 												<div class="info-row">
-													<input id="populationCheck" type="checkbox" name="population" checked="false" /> <span>Show population</span>
+													<input id="populationCheck" type="checkbox" name="population" checked="true" /> <span>Show population</span>
 												</div>
 												<div class="info-row">
-													<input id="colorCheck" type="checkbox" name="color" /> <span>Color next number</span>
+													<input id="colorCheck" type="checkbox" name="color" checked="true" /> <span>Color next number</span>
 													<div class="color-box-wrapper">
 														<div class="color-box">0</div>
 														<div class="color-box">1</div>
@@ -159,11 +162,6 @@
 											</div>
 										</div>
 									</div>
-								</div>
-								<div class="col-lg-12">
-									<div class="row">
-												
-									</div>
 								</div>								
 							</div>
 						</div>
@@ -177,7 +175,7 @@
 									The book <a href="http://shop.oreilly.com/product/9780596514556.do" target="_blank">Visualizing data</a> by <a href="http://benfry.com/" target="_blank">Ben Fry</a> inspired me to create a visualization of ZIP codes of Slovakia. It wasn't that easy, though, as there is no official document which would be suitable for such a visualization. Therefore, I firstly had to extract all necessary information from <a href="https://sk.wikipedia.org/wiki/Zoznam_slovensk%C3%BDch_obc%C3%AD_a_vojensk%C3%BDch_obvodov" target="_blank">Wikipedia's list of municipalities and towns in Slovakia</a> and then visualize it.									
 								</p>
 								<p class="info-content">
-									Originally, I wrote the map of ZIP codes in <a href="https://processing.org/" target="_blank">Processing</a> as a term project of Visualization course. Later, I reimplemented it in <a href="https://d3js.org/" target="_blank">D3.js</a> and updated it with an option of color patterns, so the relationship of a ZIP code and a city position could be clearly seen.
+									Originally, I wrote the map of ZIP codes in <a href="https://processing.org/" target="_blank">Processing</a> as a term project of Visualization course. Later, I reimplemented it in <a href="https://d3js.org/" target="_blank">D3.js</a> and updated it with an option of color patterns, so the system of ZIP numbers could be clearly seen.
 								</p>
 							</div>
 							<div class="info">

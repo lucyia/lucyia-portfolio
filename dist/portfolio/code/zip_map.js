@@ -92,6 +92,9 @@
 				// draw cities
 				update();
 
+				// initially, color background of boxes in legend
+				colorBoxes();
+
 				// add listeners to input fields
 				d3.select('#populationCheck').on('change', function(){
 					update();
@@ -101,10 +104,7 @@
 					update();
 
 					// color legend only when checked
-					d3.selectAll('.color-box')
-						.style('background-color', function(d, i){ 
-							return document.getElementById('colorCheck').checked ? cityColor(i) : nonMatchColor; 
-						});
+					colorBoxes();
 				});
 
 				d3.select('#zipInput').on('input', function(){
@@ -115,6 +115,13 @@
 						update();
 					}
 				});
+
+				function colorBoxes(){
+					d3.selectAll('.color-box')
+						.style('background-color', function(d, i){ 
+							return document.getElementById('colorCheck').checked ? cityColor(i) : nonMatchColor; 
+						});
+				}
 
 				// data don't change, only their attributes
 				function update(){
