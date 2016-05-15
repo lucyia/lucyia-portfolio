@@ -7297,6 +7297,9 @@ footer {
 .project .project-row .project-imgs-wrapper {
   margin-bottom: 30px;
 }
+.project .project-row .project-imgs-wrapper .row div {
+  margin-top: 30px;
+}
 .project .project-row .project-imgs-wrapper .project-img {
   width: 100%;
   border: 2px solid #eee;
