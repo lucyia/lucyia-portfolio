@@ -6837,6 +6837,11 @@ a:hover {
 .btn-default.btn-slider:hover {
   background-color: transparent;
 }
+.btn-default.btn-slider:active {
+  border-radius: 0;
+  background-color: transparent;
+  box-shadow: none;
+}
 .btn-default.btn-slider.btn-code:hover {
   color: #00ACEC;
 }
