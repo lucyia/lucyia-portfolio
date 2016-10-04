@@ -8,7 +8,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
 		<!-- Basic info -->
-		<title>lucyia | Thesaurus application</title>
+		<title>lucyia | Visualizing London Traffic Accidents</title>
 		<meta name="language" content="english">
 		<meta name="description" content="Personal portfolio of Lucia Kocincova a.k.a. lucyia, front-end developer and graphic designer. Code, Design, Paint.">
 		<meta name="keywords" content="lucyia, portfolio, graphic design, front-end, visualization, paintings, drawings, articles">
@@ -105,19 +105,19 @@
 			</nav>
 
 			<header>
-				<h1><span class="design-text">design</span> projects</h1>	
+				<h1><span class="code-text">code</span> projects</h1>	
 			</header>
 
 			<article>
 				<header>
 					<div class="slider slider-previous">
-						<a href="/portfolio/design/pes.html" class="btn btn-default btn-slider btn-design" title="previous project">
+						<a href="/portfolio/code/thesis.html" class="btn btn-default btn-slider btn-code" title="previous project">
 							<span class="glyphicon glyphicon-chevron-left"></span>
 						</a>
 					</div>
-					<h2>Thesaurus application</h2>
+					<h2>Visualizing London Traffic Accidents</h2>
 					<div class="slider slider-next">
-						<a href="/portfolio/design/habit_web.html" class="btn btn-default btn-slider btn-design pull-right" title="next project">
+						<a href="/portfolio/code/zip_map.html" class="btn btn-default btn-slider btn-code pull-right" title="next project">
 							<span class="glyphicon glyphicon-chevron-right"></span>
 						</a>
 					</div>
@@ -128,25 +128,20 @@
 						<div class="col-md-8 col-sm-12">
 							<div class="row project-imgs-wrapper">
 								<div class="col-lg-12">
-									<a class="gallery" href="/img/projects/tecu.jpg">
-										<img src="/img/projects/tecu.jpg" class="project-img" alt="Thesaurus application web page" />
+									<a class="gallery" href="/img/projects/tfl_data_viz_intro.jpg">
+										<img src="/img/projects/tfl_data_viz_intro.jpg" class="project-img" alt="Introduction to interactive data viz" />
 									</a>
 								</div>
 								<div class="col-lg-12">
 									<div class="row">
-										<div class="col-md-4 col-sm-12">
-											<a class="gallery" href="/img/projects/tecu_long.jpg">
-												<img src="/img/projects/tecu_long.jpg" class="project-img" alt="An example of long term in thesaurus appication" />
+										<div class="col-md-6 col-sm-12">
+											<a class="gallery" href="/img/projects/tfl_example_accident.jpg">
+												<img src="/img/projects/tfl_example_accident.jpg" class="project-img" alt="Accident details" />
 											</a>
 										</div>
-										<div class="col-md-4 col-sm-12">
-											<a class="gallery" href="/img/projects/tecu_short.jpg">
-												<img src="/img/projects/tecu_short.jpg" class="project-img" alt="An example of short term in thesaurus appication" />
-											</a>
-										</div>
-										<div class="col-md-4 col-sm-12">
-											<a class="gallery" href="/img/projects/tecu_short_edited.jpg">
-												<img src="/img/projects/tecu_short_edited.jpg" class="project-img" alt="An example of editing a term in thesaurus appication" />
+										<div class="col-md-6 col-sm-12">
+											<a class="gallery" href="/img/projects/tfl_example_borough.jpg">
+												<img src="/img/projects/tfl_example_borough.jpg" class="project-img" alt="Filtering out one borough" />
 											</a>
 										</div>
 									</div>
@@ -154,34 +149,49 @@
 							</div>
 						</div>
 					</section>
+
 					<section>
 						<div class="col-md-4 col-sm-12">
 							<div class="info">
 								<h3 class="info-heading">about</h3>
 								<p class="info-content">
-									Thesaurus application is a web based dictionary which not only allows to search or modify the data but also to extract terminology and find related terms within documents. As it is a project with continuous development, there are more possible features which can be added in the future, therefore, the whole application was created as a module based system, making the maintenance of back-end and also front-end easy.
+									This interactive visualisation aims to display traffic accident information as kept by Transport for London for the year 2015. The traffic incidents are plotted geographically on the map, colour coded by severity, and there are some interactive summary statistics in the left panel.
+								</p>
+								<p class="info-content">
+									Interactive elements highlight on hover, and can be clicked to filter the selection. The supplementary information is broken down by vehicle type, by the age-range of the people involved in the incidents and also by the London borough in which the incident occurred. 
+								</p>
+								<p class="info-content">
+									This project was created as part of a submission for the <a href="https://habitat3.org/">Habitat III</a> conference's call for submissions as part of <a href="http://cityvis.io/" target="_blank">cityvis.io</a>
+								</p>
+							</div>
+							<div class="info">
+								<h3 class="info-heading">available at</h3>
+								<p class="info-content">
+									<a href="lucyia.github.io/tfl-accidents/" target="_blank">lucyia.github.io</a>
 								</p>
 							</div>
 							<div class="info">
 								<h3 class="info-heading">developed for</h3>
 								<p class="info-content">
-									<a href="https://nlp.fi.muni.cz" target="_blank">Natural Language Processing Centre</a>
+									<a href="http://cityvis.io/" target="_blank">Visualizing Cities</a>
 								</p>
 							</div>
 							<div class="info">
 								<h3 class="info-heading">contribution</h3>
 								<p class="info-content">
-									design, front-end
+									coding
+									<br />
+									art direction/design by <a href="http://www.calumhale.com/" title="Calum Hale">Calum Hale</a>
 								</p>
 							</div>
 							<div class="info">
 								<h3 class="info-heading">technologies used</h3>
 								<p class="info-content">
-									JavaScript, jQuery, Bootstrap, XSL, HTML5, CSS3
+									JavaScript, <a href="https://d3js.org/" target="_blank">D3.js</a>, GoogleMaps API, TFL Open Data
 								</p>
 							</div>
 						</div>
-					</section>					
+					</section>
 				</div>
 			</article>
 		</div>
