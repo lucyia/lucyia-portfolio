@@ -60,7 +60,7 @@
 		<!--[if lt IE 9]>
 	      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
 	      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-	    <![endif]-->
+			<![endif]-->
 	</head>
 	
 	<body>		
@@ -140,9 +140,14 @@
 							</div>
 							<div class="row">
 								<div class="form-group col-xs-12">
-									<input type="submit" value="Send message" class="btn btn-primary">
+									<input type="text" class="form-control" name="check" id="check" placeholder="What are first two numbers of this year?" required>
 								</div>
-							</div>						
+							</div>
+							<div class="row">
+								<div class="form-group col-xs-12">
+									<input type="submit" value="Send message" class="btn btn-primary disabled hidden-btn">
+								</div>
+							</div>
 						</form>
 					</div>
 					<div class="col-md-8 col-sm-12 social-group">
@@ -186,6 +191,15 @@
 				<div class="text-right">design & code by <a href="/contact.html">lucyia</a></div>
 			</div>
 		</footer>
-		
+
+		<script>
+			// quick check to show the button only after question is correctly answered
+			document.querySelector('.hidden-btn').style.display = 'none'
+			document.querySelector('#check').addEventListener('input', (a) => {
+				if (a.target.value === '20') {
+					document.querySelector('.hidden-btn').style.display = 'block'
+				}
+			})
+		</script>
 	</body>
 </html>
