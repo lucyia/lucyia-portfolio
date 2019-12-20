@@ -7134,7 +7134,7 @@ footer {
   display: block;
   position: relative;
   width: 250px;
-  /* height: 220px; */
+  height: 220px;
   margin: 0 auto;
   background-position: 47% 50%;
   background-repeat: no-repeat;
