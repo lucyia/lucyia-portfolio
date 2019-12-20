@@ -1,0 +1,1413 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+		<!-- Viewport -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- Basic info -->
+		<title>lucyia | Climate change via storytelling</title>
+		<meta name="language" content="english">
+		<meta name="description" content="Personal portfolio of Lucia Kocincova a.k.a. lucyia, front-end developer and graphic designer. Code, Design, Paint.">
+		<meta name="keywords" content="lucyia, portfolio, graphic design, front-end, visualization, paintings, drawings, articles">
+		<meta name="robots" content="index, follow">
+
+		<!-- Minified style sheet; including Bootstrap and custom css -->
+    <link href="/style.css" rel="stylesheet">
+
+		<!-- Font -->
+		<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,900,400italic,700italic' rel='stylesheet' type='text/css'>
+
+		<!-- Minified js scripts; including jQuery, Bootstrap and custom code -->
+		<script src="/scripts-min.js" type="text/javascript"></script>
+
+		<!-- Favicon -->
+		<link rel="apple-touch-icon" sizes="57x57" href="/img/favicon/apple-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="/img/favicon/apple-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="/img/favicon/apple-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="/img/favicon/apple-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="/img/favicon/apple-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="/img/favicon/apple-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="/img/favicon/apple-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="/img/favicon/apple-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-icon-180x180.png">
+		<link rel="icon" type="image/png" sizes="192x192"  href="/img/favicon/android-icon-192x192.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="/img/favicon/favicon-96x96.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
+		<link rel="manifest" href="/img/favicon/manifest.json">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="msapplication-TileImage" content="/img/favicon/ms-icon-144x144.png">
+		<meta name="theme-color" content="#ffffff">
+
+		<!-- Google Analytics tracking code -->
+		<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-73607604-1', 'auto');
+    ga('send', 'pageview');
+		</script>
+
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <style>
+      header h1 {
+        padding-left: 0;
+        margin-bottom: 30px;
+      }
+
+      section div {
+        position: relative;
+        background: white;
+      }
+
+      .article h2 {
+        width: 100%;
+        color: black;
+        text-align: left;
+        margin-top: 20px;
+      }
+
+      .info-warning {
+        margin-top: -12px;
+      }
+
+      .info-warning .info-heading {
+        display: inline-block;
+        width: auto;
+        transform: rotate(-90deg) translate(-100%, -128%);
+        margin-top: 0;
+      }
+
+      .info-warning .info-content {
+        margin-left: 40px;
+      }
+
+      .article-subsection {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin-left: 40px;
+      }
+
+      .article-subsection a {
+        margin: 2vw;
+      }
+
+      .article-subsection a:hover {
+        text-decoration: none;
+      }
+
+      .article .section-heading {
+        display: inline-block;
+        width: auto;
+        padding-left: 0;
+      }
+
+      .subsection-heading {
+        position: relative;
+        margin-left: 46px;
+        margin-bottom: -27px;
+        font-size: 30px;
+        z-index: 1;
+      }
+
+      .info-quote {
+        padding: 20px 40px 25px 40px;
+        text-align: justify;
+      }
+
+      .info .quote {
+        position: absolute;
+        font-size: 80px;
+        font-family: "Apple Chancery", cursive;
+        color: #00a8ba;
+      }
+
+      .info .quote-start {
+        left: 0;
+        top: -15px;
+      }
+
+      .info .quote-end {
+        right: 10px;
+        bottom: -20px;
+      }
+
+      .heading-sticky {
+        position: sticky;
+        position: -webkit-sticky;
+        top: 20px;
+      }
+
+      .heading-sticky-social {
+        transform: rotate(-90deg) translate(-86%, -204%);
+      }
+
+      .heading-sticky-enviro {
+        transform: rotate(-90deg) translate(-98%, -215%);
+      }
+
+      .heading-sticky-fauna {
+        transform: rotate(-90deg) translate(-122%, -67%);
+      }
+
+      .heading-sticky-oil {
+        transform: rotate(-90deg) translate(-89%, -171%);
+      }
+
+      .heading-sticky-emissions {
+        transform: rotate(-90deg) translate(-93%, -142%);
+      }
+
+      .heading-sticky-political {
+        transform: rotate(-90deg) translate(-101%, -110%);
+      }
+
+      .heading-sticky-health {
+        transform: rotate(-90deg) translate(-146%, -74%);
+      }
+
+      .heading-sticky-energy {
+        transform: rotate(-90deg) translate(-111%, -85%);
+      }
+
+      .heading-sticky-aviation {
+        transform: rotate(-90deg) translate(-102%, -106%);
+      }
+
+      .heading-sticky-economy {
+        transform: rotate(-90deg) translate(-70%, -376%);
+      }
+
+      .heading-sticky-solutions {
+        transform: rotate(-90deg) translate(-72%, -335%);
+      }
+
+      .link-text {
+        background: black;
+        box-decoration-break: clone;
+        -webkit-box-decoration-break: clone;
+        color: white;
+        font-weight: 900;
+        padding: 7px;
+        display: inline;
+        line-height: 2;
+        opacity: 1;
+        transition: all 0.6s;
+      }
+
+      .link {
+        display: block;
+        position: relative;
+        width: 70vw;
+        max-width: 70vw;
+        height: 70vw;
+        max-height: 70vw;
+        padding: 20px 50px 0 0;
+        transition: all 0.6s;
+        background: #005f69;
+        background-size: cover;
+        background-blend-mode: luminosity;
+      }
+
+      .link:hover {
+        cursor: pointer;
+        transition: all 0.6s;
+      }
+
+      .link:hover .link-text {
+        opacity: 0;
+        transition: all 0.6s;
+      }
+
+      .link:hover::before {
+        opacity: 1;
+      }
+
+      .link::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        opacity: 0;
+        transition: all 0.6s;
+        background-size: cover;
+      }
+
+    @media (min-width: 500px) {
+      .link {
+        width: 37vw;
+        max-width: 37vw;
+        height: 37vw;
+        max-height: 37vw;
+      }
+
+      .subsection-heading {
+        margin-left: 51px;
+        margin-bottom: 0;
+      }
+    }
+
+      @media (min-width: 800px) {
+        .link {
+          width: 28vw;
+          max-width: 28vw;
+          height: 28vw;
+          max-height: 28vw;
+        }
+
+        .subsection-heading {
+          margin-left: 55px;
+          margin-bottom: -15px;
+        }
+      }
+
+      @media (min-width: 992px) {
+        .link {
+          width: 22vw;
+          max-width: 22vw;
+          height: 22vw;
+          max-height: 22vw;
+        }
+      }
+
+      @media (min-width: 1200px) {
+        .link {
+          width: 15vw;
+          max-width: 255px;
+          height: 15vw;
+          max-height: 255px;
+        }
+      }
+
+      .c00-s01-01, .c00-s01-01::before {
+        background-image: url('../img/articles/climate/c00-s01-01.jpg');
+      }
+      .c00-s01-02, .c00-s01-02::before {
+        background-image: url('../img/articles/climate/c00-s01-02.jpg');
+      }
+      .c00-s01-03, .c00-s01-03::before {
+        background-image: url('../img/articles/climate/c00-s01-03.jpg');
+      }
+      .c00-s01-04, .c00-s01-04::before {
+        background-image: url('../img/articles/climate/c00-s01-04.jpg');
+      }
+      .c00-s01-05, .c00-s01-05::before {
+        background-image: url('../img/articles/climate/c00-s01-05.jpg');
+      }
+      .c00-s01-06, .c00-s01-06::before {
+        background-image: url('../img/articles/climate/c00-s01-06.jpg');
+      }
+      .c00-s01-07, .c00-s01-07::before {
+        background-image: url('../img/articles/climate/c00-s01-07.jpg');
+      }
+      .c00-s01-08, .c00-s01-08::before {
+        background-image: url('../img/articles/climate/c00-s01-08.jpg');
+      }
+      .c01-s01-01, .c01-s01-01::before {
+        background-image: url('../img/articles/climate/c01-s01-01.jpg');
+      }
+      .c01-s01-02, .c01-s01-02::before {
+        background-image: url('../img/articles/climate/c01-s01-02.jpg');
+      }
+      .c01-s01-03, .c01-s01-03::before {
+        background-image: url('../img/articles/climate/c01-s01-03.jpg');
+      }
+      .c01-s02-01, .c01-s02-01::before {
+        background-image: url('../img/articles/climate/c01-s02-01.jpg');
+      }
+      .c01-s02-02, .c01-s02-02::before {
+        background-image: url('../img/articles/climate/c01-s02-02.jpg');
+      }
+      .c01-s02-03, .c01-s02-03::before {
+        background-image: url('../img/articles/climate/c01-s02-03.jpg');
+      }
+      .c01-s02-04, .c01-s02-04::before {
+        background-image: url('../img/articles/climate/c01-s02-04.jpg');
+      }
+      .c01-s03-01, .c01-s03-01::before {
+        background-image: url('../img/articles/climate/c01-s03-01.jpg');
+      }
+      .c01-s03-02, .c01-s03-02::before {
+        background-image: url('../img/articles/climate/c01-s03-02.jpg');
+      }
+      .c01-s03-03, .c01-s03-03::before {
+        background-image: url('../img/articles/climate/c01-s03-03.jpg');
+      }
+      .c01-s04-01, .c01-s04-01::before {
+        background-image: url('../img/articles/climate/c01-s04-01.jpg');
+      }
+      .c01-s04-02, .c01-s04-02::before {
+        background-image: url('../img/articles/climate/c01-s04-02.jpg');
+      }
+      .c01-s04-03, .c01-s04-03::before {
+        background-image: url('../img/articles/climate/c01-s04-03.jpg');
+      }
+      .c01-s05-01, .c01-s05-01::before {
+        background-image: url('../img/articles/climate/c01-s05-01.jpg');
+      }
+      .c01-s05-02, .c01-s05-02::before {
+        background-image: url('../img/articles/climate/c01-s05-02.jpg');
+      }
+      .c01-s06-01, .c01-s06-01::before {
+        background-image: url('../img/articles/climate/c01-s06-01.jpg');
+      }
+      .c01-s06-02, .c01-s06-02::before {
+        background-image: url('../img/articles/climate/c01-s06-02.jpg');
+      }
+      .c01-s06-03, .c01-s06-03::before {
+        background-image: url('../img/articles/climate/c01-s06-03.jpg');
+      }
+      .c01-s07-01, .c01-s07-01::before {
+        background-image: url('../img/articles/climate/c01-s07-01.jpg');
+      }
+      .c01-s07-02, .c01-s07-02::before {
+        background-image: url('../img/articles/climate/c01-s07-02.jpg');
+      }
+      .c01-s08-01, .c01-s08-01::before {
+        background-image: url('../img/articles/climate/c01-s08-01.jpg');
+      }
+      .c01-s08-02, .c01-s08-02::before {
+        background-image: url('../img/articles/climate/c01-s08-02.jpg');
+      }
+      .c01-s09-01, .c01-s09-01::before {
+        background-image: url('../img/articles/climate/c01-s09-01.jpg');
+      }
+      .c01-s09-02, .c01-s09-02::before {
+        background-image: url('../img/articles/climate/c01-s09-02.jpg');
+      }
+      .c01-s10-01, .c01-s10-01::before {
+        background-image: url('../img/articles/climate/c01-s10-01.jpg');
+      }
+      .c01-s11-01, .c01-s11-01::before {
+        background-image: url('../img/articles/climate/c01-s11-01.jpg');
+      }
+      .c01-s11-02, .c01-s11-02::before {
+        background-image: url('../img/articles/climate/c01-s11-02.jpg');
+      }
+      .c01-s11-03, .c01-s11-03::before {
+        background-image: url('../img/articles/climate/c01-s11-03.jpg');
+      }
+      .c01-s12-01, .c01-s12-01::before {
+        background-image: url('../img/articles/climate/c01-s12-01.jpg');
+      }
+      .c01-s12-02, .c01-s12-02::before {
+        background-image: url('../img/articles/climate/c01-s12-02.jpg');
+      }
+      .c01-s12-03, .c01-s12-03::before {
+        background-image: url('../img/articles/climate/c01-s12-03.jpg');
+      }
+      .c01-s12-04, .c01-s12-04::before {
+        background-image: url('../img/articles/climate/c01-s12-04.jpg');
+      }
+      .c01-s13-01, .c01-s13-01::before {
+        background-image: url('../img/articles/climate/c01-s13-01.jpg');
+      }
+      .c01-s13-02, .c01-s13-02::before {
+        background-image: url('../img/articles/climate/c01-s13-02.jpg');
+      }
+      .c01-s13-03, .c01-s13-03::before {
+        background-image: url('../img/articles/climate/c01-s13-03.jpg');
+      }
+      .c02-s01-01, .c02-s01-01::before {
+        background-image: url('../img/articles/climate/c02-s01-01.jpg');
+      }
+      .c02-s01-02, .c02-s01-02::before {
+        background-image: url('../img/articles/climate/c02-s01-02.jpg');
+      }
+      .c02-s01-03, .c02-s01-03::before {
+        background-image: url('../img/articles/climate/c02-s01-03.jpg');
+      }
+      .c02-s01-04, .c02-s01-04::before {
+        background-image: url('../img/articles/climate/c02-s01-04.jpg');
+      }
+      .c02-s01-05, .c02-s01-05::before {
+        background-image: url('../img/articles/climate/c02-s01-05.jpg');
+      }
+      .c02-s01-06, .c02-s01-06::before {
+        background-image: url('../img/articles/climate/c02-s01-06.jpg');
+      }
+      .c02-s01-07, .c02-s01-07::before {
+        background-image: url('../img/articles/climate/c02-s01-07.jpg');
+      }
+      .c03-s01-01, .c03-s01-01::before {
+        background-image: url('../img/articles/climate/c03-s01-01.jpg');
+      }
+      .c03-s01-02, .c03-s01-02::before {
+        background-image: url('../img/articles/climate/c03-s01-02.jpg');
+      }
+      .c03-s01-03, .c03-s01-03::before {
+        background-image: url('../img/articles/climate/c03-s01-03.jpg');
+      }
+      .c04-s01-01, .c04-s01-01::before {
+        background-image: url('../img/articles/climate/c04-s01-01.jpg');
+      }
+      .c04-s01-02, .c04-s01-02::before {
+        background-image: url('../img/articles/climate/c04-s01-02.jpg');
+      }
+      .c04-s01-03, .c04-s01-03::before {
+        background-image: url('../img/articles/climate/c04-s01-03.jpg');
+      }
+      .c04-s01-04, .c04-s01-04::before {
+        background-image: url('../img/articles/climate/c04-s01-04.jpg');
+      }
+      .c04-s01-05, .c04-s01-05::before {
+        background-image: url('../img/articles/climate/c04-s01-05.jpg');
+      }
+      .c04-s01-06, .c04-s01-06::before {
+        background-image: url('../img/articles/climate/c04-s01-06.jpg');
+      }
+      .c04-s01-07, .c04-s01-07::before {
+        background-image: url('../img/articles/climate/c04-s01-07.jpg');
+      }
+      .c05-s01-01, .c05-s01-01::before {
+        background-image: url('../img/articles/climate/c05-s01-01.jpg');
+      }
+      .c05-s01-02, .c05-s01-02::before {
+        background-image: url('../img/articles/climate/c05-s01-02.jpg');
+      }
+      .c05-s01-03, .c05-s01-03::before {
+        background-image: url('../img/articles/climate/c05-s01-03.jpg');
+      }
+      .c05-s01-04, .c05-s01-04::before {
+        background-image: url('../img/articles/climate/c05-s01-04.jpg');
+      }
+      .c05-s01-05, .c05-s01-05::before {
+        background-image: url('../img/articles/climate/c05-s01-05.jpg');
+      }
+      .c05-s01-06, .c05-s01-06::before {
+        background-image: url('../img/articles/climate/c05-s01-06.jpg');
+      }
+      .c05-s01-07, .c05-s01-07::before {
+        background-image: url('../img/articles/climate/c05-s01-07.jpg');
+      }
+      .c05-s01-08, .c05-s01-08::before {
+        background-image: url('../img/articles/climate/c05-s01-08.jpg');
+      }
+      .c05-s01-09, .c05-s01-09::before {
+        background-image: url('../img/articles/climate/c05-s01-09.jpg');
+      }
+      .c05-s01-10, .c05-s01-10::before {
+        background-image: url('../img/articles/climate/c05-s01-10.jpg');
+      }
+      .c05-s01-11, .c05-s01-11::before {
+        background-image: url('../img/articles/climate/c05-s01-11.jpg');
+      }
+      .c05-s01-12, .c05-s01-12::before {
+        background-image: url('../img/articles/climate/c05-s01-12.jpg');
+      }
+      .c05-s01-13, .c05-s01-13::before {
+        background-image: url('../img/articles/climate/c05-s01-13.jpg');
+      }
+      .c05-s01-14, .c05-s01-14::before {
+        background-image: url('../img/articles/climate/c05-s01-14.jpg');
+      }
+      .c06-s01-01, .c06-s01-01::before {
+        background-image: url('../img/articles/climate/c06-s01-01.jpg');
+      }
+      .c06-s01-02, .c06-s01-02::before {
+        background-image: url('../img/articles/climate/c06-s01-02.jpg');
+      }
+      .c06-s01-03, .c06-s01-03::before {
+        background-image: url('../img/articles/climate/c06-s01-03.jpg');
+      }
+      .c06-s01-04, .c06-s01-04::before {
+        background-image: url('../img/articles/climate/c06-s01-04.jpg');
+      }
+      .c06-s01-05, .c06-s01-05::before {
+        background-image: url('../img/articles/climate/c06-s01-05.jpg');
+      }
+      .c06-s02-01, .c06-s02-01::before {
+        background-image: url('../img/articles/climate/c06-s02-01.jpg');
+      }
+      .c06-s02-02, .c06-s02-02::before {
+        background-image: url('../img/articles/climate/c06-s02-02.jpg');
+      }
+      .c06-s02-03, .c06-s02-03::before {
+        background-image: url('../img/articles/climate/c06-s02-03.jpg');
+      }
+      .c07-s01-01, .c07-s01-01::before {
+        background-image: url('../img/articles/climate/c07-s01-01.jpg');
+      }
+      .c07-s01-02, .c07-s01-02::before {
+        background-image: url('../img/articles/climate/c07-s01-02.jpg');
+      }
+      .c07-s01-03, .c07-s01-03::before {
+        background-image: url('../img/articles/climate/c07-s01-03.jpg');
+      }
+      .c08-s01-01, .c08-s01-01::before {
+        background-image: url('../img/articles/climate/c08-s01-01.jpg');
+      }
+      .c08-s01-02, .c08-s01-02::before {
+        background-image: url('../img/articles/climate/c08-s01-02.jpg');
+      }
+      .c09-s01-01, .c09-s01-01::before {
+        background-image: url('../img/articles/climate/c09-s01-01.jpg');
+      }
+      .c09-s01-02, .c09-s01-02::before {
+        background-image: url('../img/articles/climate/c09-s01-02.jpg');
+      }
+      .c09-s01-03, .c09-s01-03::before {
+        background-image: url('../img/articles/climate/c09-s01-03.jpg');
+      }
+      .c09-s01-04, .c09-s01-04::before {
+        background-image: url('../img/articles/climate/c09-s01-04.jpg');
+      }
+      .c09-s01-05, .c09-s01-05::before {
+        background-image: url('../img/articles/climate/c09-s01-05.jpg');
+      }
+      .c09-s01-06, .c09-s01-06::before {
+        background-image: url('../img/articles/climate/c09-s01-06.jpg');
+      }
+      .c10-s01-01, .c10-s01-01::before {
+        background-image: url('../img/articles/climate/c10-s01-01.jpg');
+      }
+      .c10-s01-02, .c10-s01-02::before {
+        background-image: url('../img/articles/climate/c10-s01-02.jpg');
+      }
+      .c10-s01-03, .c10-s01-03::before {
+        background-image: url('../img/articles/climate/c10-s01-03.jpg');
+      }
+      .c10-s01-04, .c10-s01-04::before {
+        background-image: url('../img/articles/climate/c10-s01-04.jpg');
+      }
+      .c10-s01-05, .c10-s01-05::before {
+        background-image: url('../img/articles/climate/c10-s01-05.jpg');
+      }
+      .c10-s01-06, .c10-s01-06::before {
+        background-image: url('../img/articles/climate/c10-s01-06.jpg');
+      }
+    </style>
+	</head>
+	
+	<body>		
+		<div class="container article">
+			<a class="brand-lg" href="/portfolio.html">
+				<img alt="logo lucyia" src="/img/lucyia_logo.png">
+			</a>
+
+			<nav class="navbar navbar-default">
+				<div class="container-fluid">
+					<!-- collapsed nav links -->
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="/portfolio.html">
+							<img alt="logo lucyia" src="/img/lucyia_logo.png">
+						</a>
+					</div>
+
+					<!-- nav links -->
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						<ul class="nav navbar-nav">
+							<li>
+								<a href="/portfolio.html">portfolio </a>
+							</li>
+							<li class="active">
+                <a href="/articles.html">articles
+                  <span class="sr-only">(current)</span>
+                </a>
+							</li>
+							<li>
+								<a href="/about.html">about</a>
+							</li>
+							<li>
+								<a href="/contact.html">contact</a>
+							</li>
+						</ul>
+					</div><!-- /.navbar-collapse -->
+				</div><!-- /.container-fluid -->
+			</nav>
+
+			<article>
+				<header>
+					<h1>Climate Change via visual storytelling</h1>
+        </header>
+
+        <div class="row article-row">
+          <section>
+            <div class="col-sm-12">
+              <div class="info">
+                <p class="info-content">
+                  Climate change is not only about emissions, it touches every aspect of our lives and it has consequences for everyone but especially for people in countries who have least contributed to the problem. <br />
+                </p>
+                <p class="info-content">
+                  These resources (or most of them) explain climate change through visual storytelling, either by using charts or scrollytelling or other data visualization techniques to explain the issues caused by climate change.
+                  <!-- There is a also list of data resources or dedicated sites for further reading. -->
+                </p>
+              </div>
+            </div>
+            <div class="col-sm-12">
+              <div class="info info-warning">
+                <h2 class="info-heading" style="font-size: 20px; text-align: left; padding-left: 0;">Warning</h2>
+                <p class="info-content">
+                  Reading the articles can be quite overwhelming. If you would feel hopeless after reading these, take care of yourself, maybe go to section "Social Action" or “Technology / Natural solutions” which has some solutions how we can tackle this, for example one of the articles ends with:
+                  <br />
+                  <i style="display: inline-block; margin: 15px 30px 15px 0; font-weight: 900; font-size: 16px;">
+                    "Everyone [...] needs to know: We largely have the technology to solve the problem. <br /> All we have to do is start."
+                  </i>
+                </p>
+              </div>
+
+              <hr />
+
+              <div class="info info-quote" style="font-size: 26px;">
+                <a href="https://www.theguardian.com/environment/2018/oct/08/global-warming-must-not-exceed-15c-warns-landmark-un-report" target="_blank">
+                  <span class="quote quote-start">"</span>The world’s leading climate scientists have warned there is only a dozen years for global warming to be kept to a maximum of 1.5C, beyond which even half a degree will significantly worsen the risks of drought, floods, extreme heat and poverty for hundreds of millions of people.<span class="quote quote-end">"</span>
+                </a>
+              </div>
+
+              <hr />
+            </div>
+          </section>
+        </div>
+
+        <div class="row article-row">
+          <section>
+            <div class="col-sm-12">
+              <h2 id="social" class="section-heading heading-sticky heading-sticky-social">
+                Social action
+              </h2>
+
+              <div class="article-subsection">
+                <a href="https://popula.com/2019/08/19/the-case-for-climate-rage/" target="_blank">
+                  <div class="link c00-s01-01">
+                    <div class="link-text">The case for climate rage</div>
+                  </div>
+                </a>
+                <a href="https://medium.com/s/story/sorry-yall-but-climate-change-ain-t-the-first-existential-threat-b3c999267aa0" target="_blank">
+                  <div class="link c00-s01-02">
+                    <div class="link-text">Climate Change Ain’t the First Existential Threat</div>
+                  </div>
+                </a>
+                <a href="https://medium.com/@JKSteinberger/learning-from-other-non-white-struggles-74cb5651099b" target="_blank">
+                  <div class="link c00-s01-03">
+                    <div class="link-text">Learning from other non-white struggles</div>
+                  </div>
+                </a>
+                <a href="https://medium.com/@JKSteinberger/climate-breakdown-capitalism-and-democracy-e11b16c7d9ef" target="_blank">
+                  <div class="link c00-s01-04">
+                    <div class="link-text">Climate breakdown: capitalism and democracy</div>
+                  </div>
+                </a>
+                <a href="https://medium.com/age-of-awareness/a-postmortem-for-survival-on-science-failure-and-action-on-climate-change-35636c79971e" target="_blank">
+                  <div class="link c00-s01-05">
+                    <div class="link-text">A postmortem for survival: On science failure and action on climate change</div>
+                  </div>
+                </a>
+                <a href="https://www.theguardian.com/environment/2019/jan/25/our-house-is-on-fire-greta-thunberg16-urges-leaders-to-act-on-climate" target="_blank">
+                  <div class="link c00-s01-06">
+                    <div class="link-text">Our house is on fire: Greta thunberg urges leaders to act on climate</div>
+                  </div>
+                </a>
+                <a href="https://www.theguardian.com/environment/2019/sep/21/across-the-globe-millions-join-biggest-climate-protest-ever" target="_blank">
+                  <div class="link c00-s01-07">
+                    <div class="link-text">Across the globe millions join biggest climate protest ever</div>
+                  </div>
+                </a>
+                <a href="https://www.theguardian.com/environment/2019/jan/20/how-to-stop-the-climate-crisis-six-lessons-from-the-campaign-that-saved-the-ozone" target="_blank">
+                  <div class="link c00-s01-08">
+                    <div class="link-text">How to stop the climate crisis: Six lessons from the campaign that saved the ozone</div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <div class="row article-row">
+          <section>
+            <div class="col-sm-12">
+              <h2 id="enviro" class="section-heading heading-sticky heading-sticky-enviro">
+                Flora / Enviro
+              </h2>
+
+              <h3 class="subsection-heading">
+                Feedback loops
+              </h3>
+              <div class="article-subsection">
+                <a href="https://www.theguardian.com/environment/2019/feb/12/climate-and-economic-risks-threaten-2008-style-systemic-collapse" target="_blank">
+                  <div class="link c01-s01-01">
+                    <div class="link-text">Climate and economic risks 'threaten 2008 style systemic collapse'</div>
+                  </div>
+                </a>
+                <a href="https://www.theguardian.com/environment/2018/dec/20/risks-of-domino-effect-of-tipping-points-greater-than-thought-study-says" target="_blank">
+                  <div class="link c01-s01-02">
+                    <div class="link-text">Risks of 'domino effect' of tipping points greater than thought study says</div>
+                  </div>
+                </a>
+                <a href="https://www.bbc.co.uk/news/science-environment-43990403" target="_blank">
+                  <div class="link c01-s01-03">
+                    <div class="link-text">New climate 'feedback loop' discovered in freshwater lakes</div>
+                  </div>
+                </a>
+              </div>
+
+              <h3 id="regional" class="subsection-heading">
+                Regional impact
+              </h3>
+              <div class="article-subsection">
+                <a href="https://grist.org/article/we-broke-down-what-climate-change-will-do-region-by-region/" target="_blank">
+                  <div class="link c01-s02-01">
+                    <div class="link-text">US: We broke down what climate change will do, region by region</div>
+                  </div>
+                </a>
+                <a href="https://ec.europa.eu/clima/policies/adaptation/how_en" target="_blank">
+                  <div class="link c01-s02-02">
+                    <div class="link-text">EU: How will we be affected?</div>
+                  </div>
+                </a>
+                <a href="https://www.theguardian.com/environment/2018/feb/21/climate-change-will-push-european-cities-towards-breaking-point" target="_blank">
+                  <div class="link c01-s02-03">
+                    <div class="link-text">EU: Climate change 'will push european cities towards breaking point'</div>
+                  </div>
+                </a>
+                <a href="https://iopscience.iop.org/article/10.1088/1748-9326/aaaad3/meta" target="_blank">
+                  <div class="link c01-s02-04">
+                    <div class="link-text">EU: [Study ref] Future heat-waves, droughts and floods in 571 European cities</div>
+                  </div>
+                </a>
+              </div>
+
+              <h3 id="warming" class="subsection-heading">
+                Warming
+              </h3>
+              <div class="article-subsection">
+                <a href="https://www.nature.com/articles/nclimate3322" target="_blank">
+                  <div class="link c01-s03-01">
+                    <div class="link-text">Global risk of deadly heat</div>
+                  </div>
+                </a>
+                <a href="https://www.axios.com/how-much-earth-has-warmed-since-hansen-testified-b6f8fdb4-484e-477f-b8b6-6ee320994dc0.html" target="_blank">
+                  <div class="link c01-s03-02">
+                    <div class="link-text">A 30-year alarm on the reality of climate change</div>
+                  </div>
+                </a>
+                <a href="https://www.nationalgeographic.com/environment/2018/12/hurricane-season-explained-maps-photos" target="_blank">
+                  <div class="link c01-s03-03">
+                    <div class="link-text">Hurricane season explained maps photos</div>
+                  </div>
+                </a>
+              </div>
+
+              <h3 id="droughts" class="subsection-heading">
+                Droughts
+              </h3>
+              <div class="article-subsection">
+                <a href="https://www.climate.gov/news-features/event-tracker/hot-dry-summer-has-led-drought-europe-2018" target="_blank">
+                  <div class="link c01-s04-01">
+                    <div class="link-text">Europe: Hot dry summer has led drought</div>
+                  </div>
+                </a>
+                <a href="https://fingfx.thomsonreuters.com/gfx/rngs/AUSTRALIA-DROUGHT/010071MC33G/index.html" target="_blank">
+                  <div class="link c01-s04-02">
+                    <div class="link-text">Australia: The cancer eating away at farms</div>
+                  </div>
+                </a>
+                <a href="https://www.nationalgeographic.com/environment/2019/01/drought-climate-change-turn-iran-sistan-and-baluchestan-into-dust-bowl/" target="_blank">
+                  <div class="link c01-s04-03">
+                    <div class="link-text">Iran: Drought turns part of Iran into a new dust bowl</div>
+                  </div>
+                </a>
+              </div>
+
+              <h3 id="oceans" class="subsection-heading">
+                Oceans / Rivers
+              </h3>
+              <div class="article-subsection">
+                <a href="https://www.theguardian.com/environment/climate-consensus-97-per-cent/2019/jan/16/our-oceans-broke-heat-records-in-2018-and-the-consequences-are-catastrophic" target="_blank">
+                  <div class="link c01-s05-01">
+                    <div class="link-text">Our oceans broke heat records in 2018 and the consequences are catastrophic</div>
+                  </div>
+                </a>
+                <a href="https://www.ipcc.ch/srocc/chapter/summary-for-policymakers/" target="_blank">
+                  <div class="link c01-s05-02">
+                    <div class="link-text">Special report on the ocean and cryosphere in a changing climate</div>
+                  </div>
+                </a>
+              </div>
+
+              <h3 id="sea-rise" class="subsection-heading">
+                Rising sea levels
+              </h3>
+              <div class="article-subsection">
+                <a href="https://searise.correctiv.org/en" target="_blank">
+                  <div class="link c01-s06-01">
+                    <div class="link-text">[DataViz] Rising sea levels</div>
+                  </div>
+                </a>
+                <a href="https://www.nbcnews.com/news/world/scope-great-barrier-reef-s-massive-coral-bleaching-alarms-scientists-n867521" target="_blank">
+                  <div class="link c01-s06-02">
+                    <div class="link-text">Scope of Great Barrier Reef's massive coral bleaching alarms scientists</div>
+                  </div>
+                </a>
+                <a href="https://graphics.reuters.com/INDIA-RIVER/010081TW39P/index.html" target="_blank">
+                  <div class="link c01-s06-03">
+                    <div class="link-text">The race to save the river Ganges</div>
+                  </div>
+                </a>
+              </div>
+
+              <h3 id="ice-caps" class="subsection-heading">
+                Ice caps
+              </h3>
+              <div class="article-subsection">
+                <a href="https://www.theguardian.com/environment/2019/feb/04/a-third-of-himalayan-ice-cap-doomed-finds-shocking-report" target="_blank">
+                  <div class="link c01-s07-01">
+                    <div class="link-text">A third of Himalayan ice cap doomed, finds report</div>
+                  </div>
+                </a>
+                <a href="https://www.nationalgeographic.com/environment/2018/11/venezuela-humboldt-glacier-melting-disappearing-climate-change/" target="_blank">
+                  <div class="link c01-s07-02">
+                    <div class="link-text">Venezuela's last glacier is about to disappear</div>
+                  </div>
+                </a>
+              </div>
+
+              <h3 id="arctic" class="subsection-heading">
+                Arctic
+              </h3>
+              <div class="article-subsection">
+                <a href="https://www.washingtonpost.com/gdpr-consent/?destination=%2fenergy-environment%2f2018%2f12%2f11%2farctic-is-even-worse-shape-than-you-realize" target="_blank">
+                  <div class="link c01-s08-01">
+                    <div class="link-text">Arctic is even worse shape than you realize</div>
+                  </div>
+                </a>
+                <a href="https://www.sciencedirect.com/science/article/pii/S1873965218301543" target="_blank">
+                  <div class="link c01-s08-02">
+                    <div class="link-text">The Urgency of Arctic change</div>
+                    <!-- <a class="link-see-also" href="How a Melting Arctic Changes Everything in Political"></a> -->
+                  </div>
+                </a>
+              </div>
+
+              <h3 id="antarctica" class="subsection-heading">
+                Antarctica
+              </h3>
+              <div class="article-subsection">
+                <a href="https://www.theguardian.com/world/2018/dec/11/east-antarctica-glacial-stronghold-melting-amid-climate-change" target="_blank">
+                  <div class="link c01-s09-01">
+                    <div class="link-text">East Antarctica glacial stronghold melting as seas warm</div>
+                  </div>
+                </a>
+                <a href="https://www.nytimes.com/interactive/2017/05/18/climate/antarctica-ice-melt-climate-change.html" target="_blank">
+                  <div class="link c01-s09-02">
+                    <div class="link-text">Miles of ice collapsing into the sea</div>
+                  </div>
+                </a>
+              </div>
+
+              <h3 id="greenland" class="subsection-heading">
+                Greenland
+              </h3>
+              <div class="article-subsection">
+                <a href="https://www.nytimes.com/interactive/2015/10/27/world/greenland-is-melting-away.html" target="_blank">
+                  <div class="link c01-s10-01">
+                    <div class="link-text">Greenland is melting away</div>
+                  </div>
+                </a>
+              </div>
+
+              <h3 id="deforestation" class="subsection-heading">
+                Deforestation
+              </h3>
+              <div class="article-subsection">
+                <a href="https://qz.com/1446831/what-will-happen-to-the-brazilian-rainforest-under-jair-bolsonaro/" target="_blank">
+                  <div class="link c01-s11-01">
+                    <div class="link-text">We already know what Jair Bolsonaro’s vision for the Amazon would look like</div>
+                  </div>
+                </a>
+                <a href="https://www.theguardian.com/environment/ng-interactive/2018/jun/27/one-football-pitch-of-forest-lost-every-second-in-2017-data-reveals" target="_blank">
+                  <div class="link c01-s11-02">
+                    <div class="link-text">One football pitch of forest lost every second in 2017, data reveals</div>
+                  </div>
+                </a>
+                <a href="https://www.theguardian.com/sustainable-business/ng-interactive/2014/nov/10/palm-oil-rainforest-cupboard-interactive" target="_blank">
+                  <div class="link c01-s11-03">
+                    <div class="link-text">[DataViz] From rainforest to your cupboard: the real story of palm oil</div>
+                  </div>
+                </a>
+              </div>
+
+              <h3 id="agriculture" class="subsection-heading">
+                Agriculture
+              </h3>
+              <div class="article-subsection">
+                <a href="https://ourworldindata.org/yields-and-land-use-in-agriculture" target="_blank">
+                  <div class="link c01-s12-01">
+                    <div class="link-text">[DataViz] Yields and land use in agriculture</div>
+                  </div>
+                </a>
+                <a href="https://www.yaleclimateconnections.org/2019/02/saltwater-invades-rice-fields-damages-crops/" target="_blank">
+                  <div class="link c01-s12-02">
+                    <div class="link-text">Saltwater is invading rice fields and damaging crops</div>
+                  </div>
+                </a>
+                <a href="https://www.bloomberg.com/news/articles/2018-07-16/europe-s-blistering-heatwave-is-ruining-this-year-s-harvest" target="_blank">
+                  <div class="link c01-s12-03">
+                    <div class="link-text">Europe's blistering heatwave is ruining this year's harvest</div>
+                  </div>
+                </a>
+                <a href="https://www.theguardian.com/environment/2019/sep/06/phosphate-fertiliser-crisis-threatens-world-food-supply" target="_blank">
+                  <div class="link c01-s12-04">
+                    <div class="link-text">Phosphate fertiliser 'crisis' threatens world food supply</div>
+                  </div>
+                </a>
+              </div>
+
+              <h3 id="overconsumption" class="subsection-heading">
+                Overconsumption
+              </h3>
+              <div class="article-subsection">
+                <a href="https://www.theguardian.com/environment/2018/jul/23/earths-resources-consumed-in-ever-greater-destructive-volumes" target="_blank">
+                  <div class="link c01-s13-01">
+                    <div class="link-text">Earth's resources consumed in ever greater destructive volumes</div>
+                    <!-- <a class="link-see-also" href="(see Earth Overshoot Day website for more info and solutions)"></a> -->
+                  </div>
+                </a>
+                <a href="https://www.theguardian.com/environment/2015/dec/02/worlds-richest-10-produce-half-of-global-carbon-emissions-says-oxfam" target="_blank">
+                  <div class="link c01-s13-02">
+                    <div class="link-text">Worlds richest 10 produce half of global carbon emissions says Oxfam</div>
+                  </div>
+                </a>
+                <a href="https://www.theguardian.com/environment/2018/oct/10/huge-reduction-in-meat-eating-essential-to-avoid-climate-breakdown" target="_blank">
+                  <div class="link c01-s13-03">
+                    <div class="link-text">Huge reduction in meat eating 'essential' to avoid climate breakdown</div>
+                  </div>
+                </a>
+              </div>
+
+            </div>
+          </section>
+        </div>
+
+        <div class="row article-row">
+          <section>
+            <div class="col-sm-12">
+              <h2 id="fauna" class="section-heading heading-sticky heading-sticky-fauna">
+                Fauna
+              </h2>
+
+              <div class="article-subsection">
+                <a href="https://grist.org/article/climate-change-great-dying-planets-worst-extinction/" target="_blank">
+                  <div class="link c02-s01-01">
+                    <div class="link-text">Great dying: planets worst extinction</div>
+                  </div>
+                </a>
+                <a href="https://www.theguardian.com/environment/2018/jan/04/oceans-suffocating-dead-zones-oxygen-starved" target="_blank">
+                  <div class="link c02-s01-02">
+                    <div class="link-text">Oceans suffocating as huge dead zones quadruple since 1950</div>
+                  </div>
+                </a>
+                <a href="https://www.theguardian.com/environment/2019/feb/10/plummeting-insect-numbers-threaten-collapse-of-nature" target="_blank">
+                  <div class="link c02-s01-03">
+                    <div class="link-text">Plummeting insect numbers 'threaten collapse of nature'</div>
+                  </div>
+                </a>
+                <a href="https://www.bbc.co.uk/news/science-environment-43169824" target="_blank">
+                  <div class="link c02-s01-04">
+                    <div class="link-text">World's fishing fleets mapped from orbit</div>
+                  </div>
+                </a>
+                <a href="https://www.pnas.org/content/114/30/E6089" target="_blank">
+                  <div class="link c02-s01-05">
+                    <div class="link-text">Biological annihilation via the ongoing sixth mass extinction</div>
+                  </div>
+                </a>
+                <a href="http://maps.tnc.org/migrations-in-motion/#5/-10.984/-62.183" target="_blank">
+                  <div class="link c02-s01-06">
+                    <div class="link-text">[DataViz] Migration in motion: Visualizing species movements due to climate change</div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <div class="row article-row">
+          <section>
+            <div class="col-sm-12">
+              <h2 id="oil-plastic" class="section-heading heading-sticky heading-sticky-oil">
+                Oil / Plastic
+              </h2>
+
+              <div class="article-subsection">
+                <a href="https://www.theguardian.com/environment/2018/mar/22/great-pacific-garbage-patch-sprawling-with-far-more-debris-than-thought" target="_blank">
+                  <div class="link c03-s01-01">
+                    <div class="link-text">Great pacific garbage patch sprawling with far more debris than thought</div>
+                  </div>
+                </a>
+                <a href="https://www.nationalgeographic.com/environment/planetorplastic" target="_blank">
+                  <div class="link c03-s01-02">
+                    <div class="link-text">[Series] Planet or plastic?</div>
+                  </div>
+                </a>
+                <a href="https://news.nationalgeographic.com/2017/07/plastic-produced-recycling-waste-ocean-trash-debris-environment/" target="_blank">
+                  <div class="link c03-s01-03">
+                    <div class="link-text">A whopping 91% of plastic isn't recycled</div>
+                  </div>
+                </a>
+              </div>
+
+            </div>
+          </section>
+        </div>
+
+        <div class="row article-row">
+          <section>
+            <div class="col-sm-12">
+              <h2 id="emissions" class="section-heading heading-sticky heading-sticky-emissions">
+                Emissions
+              </h2>
+
+              <div class="article-subsection">
+                <a href="https://www.wired.co.uk/article/cop24-report-global-carbon-emissions-on-the-rise-in-2018" target="_blank">
+                  <div class="link c04-s01-01">
+                    <div class="link-text">Despite the Paris Agreement, CO2 emissions are rising again</div>
+                  </div>
+                </a>
+                <a href="https://ourworldindata.org/co2-and-other-greenhouse-gas-emissions" target="_blank">
+                  <div class="link c04-s01-02">
+                    <div class="link-text">CO₂ and Greenhouse Gas Emissions</div>
+                  </div>
+                </a>
+                <a href="https://www.globalcarbonproject.org/carbonbudget/18/infographics.htm" target="_blank">
+                  <div class="link c04-s01-03">
+                    <div class="link-text">[Infographics] Carbon budget</div>
+                  </div>
+                </a>
+                <a href="https://www.nytimes.com/2018/01/25/business/china-davos-climate-change.html" target="_blank">
+                  <div class="link c04-s01-04">
+                    <div class="link-text">China’s emissions: more than U.S. plus Europe, and still rising</div>
+                  </div>
+                </a>
+                <a href="https://climate.nasa.gov/news/2218/global-is-the-new-local-pollution-changes-clouds-climate-downstream/" target="_blank">
+                  <div class="link c04-s01-05">
+                    <div class="link-text">Global is the new local: Pollution changes clouds, climate downstream</div>
+                  </div>
+                </a>
+                <a href="https://www.theguardian.com/environment/2017/feb/27/check-if-your-london-nursery-school-or-college-is-exposed-to-toxic-air" target="_blank">
+                  <div class="link c04-s01-06">
+                    <div class="link-text">London: Check if your london nursery school or college is exposed to toxic air</div>
+                  </div>
+                </a>
+                <a href="http://www.londonair.org.uk/" target="_blank">
+                  <div class="link c04-s01-07">
+                    <div class="link-text">London: Air Quality Network</div>
+                  </div>
+                </a>
+              </div>
+
+            </div>
+          </section>
+        </div>
+
+        <div class="row article-row">
+          <section>
+            <div class="col-sm-12">
+              <h2 id="political" class="section-heading heading-sticky heading-sticky-political">
+                  Political
+              </h2>
+
+              <div class="article-subsection">
+                <a href="https://www.vox.com/energy-and-environment/2017/9/26/16356524/the-population-question" target="_blank">
+                  <div class="link c05-s01-01">
+                    <div class="link-text">I’m an enviro journalist, but I never write about overpopulation. Here’s why.</div>
+                  </div>
+                </a>
+                <a href="https://www.theguardian.com/environment/ng-interactive/2017/jul/13/the-defenders-tracker" target="_blank">
+                  <div class="link c05-s01-02">
+                    <div class="link-text">[DataViz] The defenders tracker</div>
+                  </div>
+                </a>
+                <a href="https://thebulletin.org/doomsday-clock/" target="_blank">
+                  <div class="link c05-s01-03">
+                    <div class="link-text">Doomsday clock: A new abnormal - it’s still 2 minutes to midnight</div>
+                  </div>
+                </a>
+                <a href="https://www.bloomberg.com/graphics/2017-arctic/" target="_blank">
+                  <div class="link c05-s01-04">
+                    <div class="link-text">How a Melting Arctic Changes Everything <br/> (Part I / II / III)</div>
+                  </div>
+                </a>
+                <a href="https://www.nationalgeographic.com/environment/2019/01/climate-change-drives-migration-crisis-in-bangladesh-from-dhaka-sundabans/" target="_blank">
+                  <div class="link c05-s01-05">
+                    <div class="link-text">Climate change creates a new migration crisis for Bangladesh</div>
+                  </div>
+                </a>
+                <a href="https://www.nationalgeographic.com/environment/2018/10/drought-climate-change-force-guatemalans-migrate-to-us/" target="_blank">
+                  <div class="link c05-s01-06">
+                    <div class="link-text">Changing climate forces desperate Guatemalans to migrate</div>
+                  </div>
+                </a>
+                <a href="https://www.icrc.org/en/document/mali-niger-climate-change-and-conflict-make-explosive-mix-sahel" target="_blank">
+                  <div class="link c05-s01-07">
+                    <div class="link-text">Mali Niger climate change and conflict make explosive mix</div>
+                  </div>
+                </a>
+                <a href="https://www.ft.com/content/971f03aa-f9e0-11e7-9b32-d7d59aace167" target="_blank">
+                  <div class="link c05-s01-08">
+                    <div class="link-text">Brazil: Rainforest pays the price for the country’s crisis</div>
+                  </div>
+                </a>
+                <a href="https://twitter.com/rahmstorf/status/1070717050430070787" target="_blank">
+                  <div class="link c05-s01-09">
+                    <div class="link-text">How easily we could have solved the climate crisis</div>
+                  </div>
+                </a>
+                <a href="https://www.weforum.org/agenda/2018/12/the-geopolitical-impact-of-china-s-approach-to-fighting-climate-change/" target="_blank">
+                  <div class="link c05-s01-10">
+                    <div class="link-text">The geopolitical impact of China's approach to fighting climate change</div>
+                  </div>
+                </a>
+                <a href="https://www.nationalgeographic.com/environment/2018/12/guam-endangered-species-ecology-threatened-us-military-base-expansion/" target="_blank">
+                  <div class="link c05-s01-11">
+                    <div class="link-text">Guam's ecological fate is in the hands of the U.S. military</div>
+                  </div>
+                </a>
+                <a href="https://news.nationalgeographic.com/2017/03/kids-sue-us-government-climate-change/" target="_blank">
+                  <div class="link c05-s01-12">
+                    <div class="link-text">Kids sue US government climate change</div>
+                  </div>
+                </a>
+                <a href="https://www.independent.co.uk/environment/climate-change-poland-cop24-coal-air-pollution-global-warming-fossil-fuels-a8672481.html" target="_blank">
+                  <div class="link c05-s01-13">
+                    <div class="link-text">Poland shows no signs of breaking coal addiction</div>
+                  </div>
+                </a>
+                <a href="https://www.theguardian.com/global-development/2019/sep/21/save-us-save-the-world-pacific-climate-warriors-taking-the-fight-to-the-un" target="_blank">
+                  <div class="link c05-s01-14">
+                    <div class="link-text">Save us, save the world - Pacific climate warriors taking the fight to the UN</div>
+                  </div>
+                </a>
+              </div>
+
+            </div>
+          </section>
+        </div>
+
+        <div class="row article-row">
+          <section>
+            <div class="col-sm-12">
+              <h2 id="health" class="section-heading heading-sticky heading-sticky-health">
+                Health
+              </h2>
+
+              <h3 id="mental-health" class="subsection-heading">
+                Mental health - dealing with climate change
+              </h3>
+              <div class="article-subsection">
+                <a href="https://popula.com/2019/08/19/the-case-for-climate-rage/" target="_blank">
+                  <div class="link c06-s01-01">
+                    <div class="link-text">The case for climate rage</div>
+                  </div>
+                </a>
+                <a href="http://nymag.com/intelligencer/2018/12/parenting-children-generation-of-climate-change.html" target="_blank">
+                  <div class="link c06-s01-02">
+                    <div class="link-text">Parenting children generation of climate change</div>
+                  </div>
+                </a>
+                <a href="https://blogs.scientificamerican.com/hot-planet/thinking-about-climate-on-a-dark-dismal-morning/" target="_blank">
+                  <div class="link c06-s01-03">
+                    <div class="link-text">Thinking about climate on a dark dismal morning</div>
+                  </div>
+                </a>
+                <a href="https://www.smh.com.au/opinion/im-worried-having-a-baby-will-make-climate-change-worse-20170314-guxtqq.html" target="_blank">
+                  <div class="link c06-s01-04">
+                    <div class="link-text">I'm worried having a baby will make climate change worse</div>
+                  </div>
+                </a>
+                <a href="https://twitter.com/aviandelights/status/843581434275147776" target="_blank">
+                  <div class="link c06-s01-05">
+                    <div class="link-text">This figure demonstrates my conflicted feelings about having children</div>
+                  </div>
+                </a>
+              </div>
+
+              <h3 id="impact-health" class="subsection-heading">
+                Impact of climate change on health
+              </h3>
+              <div class="article-subsection">
+                <a href="http://theconversation.com/how-global-warming-is-adding-to-the-health-risks-of-poor-people-109520" target="_blank">
+                  <div class="link c06-s02-01">
+                    <div class="link-text">How global warming is adding to the health risks of poor people</div>
+                  </div>
+                </a>
+                <a href="https://www.theguardian.com/environment/2019/jan/30/children-exposed-to-air-pollution-more-likely-to-develop-depression" target="_blank">
+                  <div class="link c06-s02-02">
+                    <div class="link-text">Growing up in dirty air 'quadruples chances of developing depression'</div>
+                  </div>
+                </a>
+                <a href="https://www.theguardian.com/environment/2019/jan/11/air-pollution-as-bad-as-smoking-in-increasing-risk-of-miscarriage" target="_blank">
+                  <div class="link c06-s02-03">
+                    <div class="link-text">Air pollution 'as bad as smoking in increasing risk of miscarriage'</div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <div class="row article-row">
+          <section>
+            <div class="col-sm-12">
+              <h2 id="energy" class="section-heading heading-sticky heading-sticky-energy">
+                Energy
+              </h2>
+
+              <div class="article-subsection">
+                <a href="https://www.nationalgeographic.com/environment/global-warming/powering-the-future/" target="_blank">
+                  <div class="link c07-s01-01">
+                    <div class="link-text">Future Power: Where Will the World Get Its Next Energy Fix?</div>
+                  </div>
+                </a>
+                <a href="https://www.nationalgeographic.com/science/2018/07/news-internet-underwater-sea-level-rise/" target="_blank">
+                  <div class="link c07-s01-02">
+                    <div class="link-text">The internet is drowning</div>
+                  </div>
+                </a>
+                <a href="http://ix.cs.uoregon.edu/~ram/papers/ANRW-2018.pdf" target="_blank">
+                  <div class="link c07-s01-03">
+                    <div class="link-text">[Study ref] Lights Out: Climate Change Risk to Internet Infrastructure</div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <div class="row article-row">
+          <section>
+            <div class="col-sm-12">
+              <h2 id="aviation" class="section-heading heading-sticky heading-sticky-aviation">
+                Aviation
+              </h2>
+
+              <div class="article-subsection">
+                <a href="https://ec.europa.eu/transport/sites/transport/files/2019-aviation-environmental-report.pdf" target="_blank">
+                  <div class="link c08-s01-01">
+                    <div class="link-text">2019 Aviation environmental report</div>
+                  </div>
+                </a>
+                <a href="https://maps.blueshift.io/air-traffic-globe/" target="_blank">
+                  <div class="link c08-s01-02">
+                    <div class="link-text">[DataViz] One Year of Air Traffic / One Million Particles</div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <div class="row article-row">
+          <section>
+            <div class="col-sm-12">
+              <h2 id="economy" class="section-heading heading-sticky heading-sticky-economy">
+                Economy / Capitalism
+              </h2>
+
+              <div class="article-subsection">
+                <a href="https://communemag.com/between-the-devil-and-the-green-new-deal/" target="_blank">
+                  <div class="link c09-s01-01">
+                    <div class="link-text">Between the devil and the green new deal</div>
+                  </div>
+                </a>
+                <a href="https://www.huffingtonpost.co.uk/entry/climate-change-capitalism-economy_us_5b87bf0ce4b0cf7b00326edc" target="_blank">
+                  <div class="link c09-s01-02">
+                    <div class="link-text">We cannot fight climate change with capitalism, says report</div>
+                  </div>
+                </a>
+                <a href="https://www.stockholmresilience.org/5.6a05f90515fd62ae18910497.html" target="_blank">
+                  <div class="link c09-s01-03">
+                    <div class="link-text">The hidden environmental consequences of tax havens</div>
+                  </div>
+                </a>
+                <a href="https://www.nytimes.com/2018/11/23/climate/us-climate-report.html" target="_blank">
+                  <div class="link c09-s01-04">
+                    <div class="link-text">U.S. climate report warns of damaged environment and shrinking economy</div>
+                  </div>
+                </a>
+                <a href="https://www.nytimes.com/2019/01/17/upshot/how-to-think-about-the-costs-of-climate-change.html" target="_blank">
+                  <div class="link c09-s01-05">
+                    <div class="link-text">Climate change’s giant impact on the economy: 4 key issues</div>
+                  </div>
+                </a>
+                <a href="https://www.forbes.com/sites/mikescott/2018/05/31/insurers-in-the-front-line-of-the-fight-against-climate-change-shoot-themselves-in-the-foot/" target="_blank">
+                  <div class="link c09-s01-06">
+                    <div class="link-text">Insurers will be hard-hit by climate change but they're not investing in low-carbon economy</div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <div class="row article-row">
+          <section>
+            <div class="col-sm-12">
+              <h2 id="solutions" class="section-heading heading-sticky heading-sticky-solutions">
+                Tech / Eco solutions
+              </h2>
+
+              <div class="article-subsection">
+                <a href="https://www.nationalgeographic.com/magazine/2017/04/seven-things-to-know-about-climate-change/" target="_blank">
+                  <div class="link c10-s01-01">
+                    <div class="link-text">Seven things to know about climate change</div>
+                  </div>
+                </a>
+                <a href="https://www.bbc.co.uk/news/science-environment-46345280" target="_blank">
+                  <div class="link c10-s01-02">
+                    <div class="link-text">Can 12 billion tonnes of carbon be sucked from the air?</div>
+                  </div>
+                </a>
+                <a href="https://qz.com/1144298/humanitys-fight-against-climate-change-is-failing-one-technology-can-change-that/" target="_blank">
+                  <div class="link c10-s01-03">
+                    <div class="link-text">Humanity’s fight against climate change is failing. One technology can change that.</div>
+                  </div>
+                </a>
+                <a href="https://www.nationalgeographic.com/environment/2019/01/carbon-capture-trees-atmosphere-climate-change/" target="_blank">
+                  <div class="link c10-s01-04">
+                    <div class="link-text">To curb climate change, we have to suck carbon from the sky. But how?</div>
+                  </div>
+                </a>
+                <a href="https://www.nationalgeographic.com/environment/2018/12/pemba-kokota-tanzania-islands-reforest-and-adapt-to-climate-change/" target="_blank">
+                  <div class="link c10-s01-05">
+                    <div class="link-text">This island was on the brink of disaster. Then, they planted thousands of trees.</div>
+                  </div>
+                </a>
+                <a href="https://t.co/i69BDSWso1?amp=1" target="_blank">
+                  <div class="link c10-s01-06">
+                    <div class="link-text">Korean Demilitarized Zone is a safe haven for animals</div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </section>
+        </div>
+
+			</article>
+		</div>
+		
+		<footer>
+			<div class="container">
+				<div class="text-right">design & code by <a href="/contact.html">lucyia</a></div>
+			</div>
+		</footer>
+	</body>
+</html>
