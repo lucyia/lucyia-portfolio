@@ -179,17 +179,11 @@ if(isset($_POST['email'])) {
 
 			<article>
 				<header>
-					<h2>thank you</h2>
+					<h2>thank you, I will get in touch with you as soon as possible.</h2>
 				</header>
-
-				<div class="row">
-					<div class="col-sm-12 contact-text-success">
-						<p>I will get in touch with you as soon as possible.</p>
-					</div>
-				</div>				
 			</article>
 		</div>
-		
+
 		<footer>
 			<div class="container">
 				<div class="text-right">design & code by <a href="lucyia.com">lucyia</a></div>
