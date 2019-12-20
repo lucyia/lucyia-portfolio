@@ -6983,75 +6983,116 @@ footer {
     display: inline-block;
   }
 }
-.portfolio .triangle {
-  display: block;
-  width: 100%;
-  height: 400px;
-  background-position: center;
-  background-repeat: no-repeat;
+.quicksand {
+  display: flex;
+  justify-content: space-evenly;
+}
+.quicksand.articles {
+  position: relative;
+  justify-content: left;
+}
+.quicksand.articles .link {
   position: relative;
 }
-.portfolio .triangle-code {
-  background-image: url(/img/main/code_triangle_white.png);
+.quicksand .link {
+  width: 25vw;
+  height: 25vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.portfolio .triangle-design {
-  background-image: url(/img/main/design_triangle_white.png);
+.quicksand .triangle {
+  position: relative;
+  width: 80%;
+  height: 80%;
+  clip-path: polygon(100% 67%, 84% 90%, 15% 90%, 0% 67%, 36% 5%, 67% 5%);
+  transition: all 0.4s;
 }
-.portfolio .triangle-paint {
-  background-image: url(/img/main/paint_triangle_white.png);
+.quicksand .triangle img {
+  position: absolute;
+  top: 2.75vw;
+  left: 2.5vw;
+  width: calc(100% - 5vw);
+  /* clip-path: polygon(100% 67%, 84% 90%, 15% 90%, 0% 67%, 36% 5%, 67% 5%); */
+  clip-path: polygon(100% 72%, 90% 87%, 10% 87%, 0% 72%, 39% 3%, 65% 3%);
+  transition: all 0.4s;
 }
-.portfolio .triangle-front {
-  z-index: 10;
-  background-size: 300px auto;
+.quicksand .link:hover .triangle {
+  background: transparent;
+  transition: all 0.4s;
 }
-.portfolio .triangle-back {
-  z-index: 0;
-  background-size: 250px auto;
-  -webkit-transition: all 0.5s ease-in-out;
-  -o-transition: all 0.5s ease-in-out;
+.quicksand .link:hover .triangle img {
+  transform: scale(1.65);
+  transition: all 0.4s;
+}
+.quicksand .link:hover .triangle-text-article {
+  transform: scale(1.35);
+  background-color: white;
   transition: all 0.5s ease-in-out;
 }
-.portfolio .triangle-back:hover {
-  background-size: 300px auto;
+.quicksand .link .triangle-text-article {
+  transform: scale(1);
+  transition: all 0.5s ease-in-out;
 }
-.portfolio .triangle-back-code {
-  background-image: url(/img/main/code_triangle_back.png);
+.portfolio .link .triangle-text-wrapper {
+  transition: all 0.5s ease-in-out;
 }
-.portfolio .triangle-back-design {
-  background-image: url(/img/main/design_triangle_back.png);
+.portfolio .link:hover .triangle .text-wrapper-code {
+  transform: scale(1.3) translate(0%, 25%);
 }
-.portfolio .triangle-back-paint {
-  background-image: url(/img/main/paint_triangle_back.png);
+.portfolio .link:hover .triangle .text-wrapper-design {
+  transform: scale(1.2) translate(-10%, -20%);
+}
+.portfolio .link:hover .triangle .text-wrapper-paint {
+  transform: scale(1.25) translate(-15%, -40%);
+}
+.triangle-text {
+  font-size: 4.5vw;
+  font-weight: 900;
+  transition: all 0.5s ease-in-out;
+}
+.triangle-text-article {
+  position: absolute;
+  font-size: 16px;
+  font-weight: 900;
+  left: 90%;
+  width: 70vw;
+  padding: 0.75vw;
+  transition: all 0.5s ease-in-out;
+}
+.quicksand .triangle-right,
+.portfolio .triangle-code,
+.portfolio .triangle-paint {
+  transform: rotate(-90deg);
+}
+.quicksand .triangle-left,
+.portfolio .triangle-design {
+  transform: rotate(90deg);
+}
+.portfolio .code-text {
+  transform: rotate(90deg) translate(47%, -8%);
+}
+.portfolio .paint-text {
+  transform: rotate(90deg) translate(62%, -60%);
+}
+.portfolio .design-text {
+  transform: rotate(-90deg) translate(-16%, 32%);
+}
+.portfolio .link:hover {
+  text-decoration: none;
 }
 @media (max-width: 991px) {
   .portfolio {
     margin: 50px auto;
   }
-  .portfolio .triangle {
-    height: 250px;
-  }
-  .portfolio .triangle-back {
-    background-size: 200px auto;
-  }
-  .portfolio .triangle-back:hover {
-    background-size: 250px auto;
-  }
-  .portfolio .triangle-front {
-    background-size: 250px auto;
+}
+@media (min-width: 700px) {
+  .triangle-text-article {
+    font-size: 30px;
   }
 }
 @media (min-width: 991px) and (max-width: 1199px) {
-  .portfolio .triangle {
-    background-size: 300px;
-    height: 400px;
-  }
-  .portfolio .triangle-back {
-    background-size: 200px auto;
-    height: 350px;
-  }
-  .portfolio .triangle-back:hover {
-    background-size: 250px auto;
-  }
+  
 }
 .triangles .row:first-of-type .col-md-6,
 .triangles .row:first-of-type .col-md-12 {
@@ -7093,7 +7134,7 @@ footer {
   display: block;
   position: relative;
   width: 250px;
-  height: 220px;
+  /* height: 220px; */
   margin: 0 auto;
   background-position: 47% 50%;
   background-repeat: no-repeat;
@@ -7250,6 +7291,12 @@ footer {
 .triangle-back-project-mig {
   background-image: url(/img/triangles/project_mig.png);
 }
+.main-bg {
+  background: #0092A2;
+}
+.code-bg {
+  background: #00ACEC;
+}
 .code-text {
   color: #00ACEC;
 }
@@ -7260,6 +7307,9 @@ footer {
   background-image: url(/img/main/triangle_blue.png);
   background-size: 300px;
 }
+.design-bg {
+  background: #8AC43E;
+}
 .design-text {
   color: #8AC43E;
 }
@@ -7269,6 +7319,9 @@ footer {
 .design .triangle-design {
   background-image: url(/img/main/triangle_green.png);
   background-size: 300px;
+}
+.paint-bg {
+  background: #BB1E2C;
 }
 .paint-text {
   color: #BB1E2C;
