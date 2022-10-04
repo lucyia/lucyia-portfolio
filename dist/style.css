@@ -6997,6 +6997,8 @@ footer {
 .quicksand .link {
   width: 25vw;
   height: 25vw;
+  max-width: 400px;
+  max-height: 400px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -7115,13 +7117,13 @@ footer {
   padding: 0 10px 10px 10px;
   z-index: 1000;
 }
-.triangles .triangle-heading > a {
+.triangles .triangle-heading > span {
   color: white;
   font-size: 16px;
   font-weight: 700;
   text-decoration: none;
 }
-.triangles .triangle-heading > a:hover {
+.triangles .triangle-heading > span:hover {
   text-decoration: underline;
 }
 .triangles .triangle-heading::after {
@@ -7279,6 +7281,12 @@ footer {
 .triangle-back-project-blue {
   background-image: url(/img/triangles/project_blue.png);
 }
+.triangle-back-project-city {
+  background-image: url(/img/triangles/project_city.png);
+}
+.triangle-back-project-reflection {
+  background-image: url(/img/triangles/project_reflection.png);
+}
 .triangle-back-project-hands {
   background-image: url(/img/triangles/project_hands.png);
 }
@@ -7290,6 +7298,15 @@ footer {
 }
 .triangle-back-project-mig {
   background-image: url(/img/triangles/project_mig.png);
+}
+.triangle-back-project-trilemma {
+  background-image: url(/img/triangles/project_trilemma.png);
+}
+.triangle-back-project-metoomentum {
+  background-image: url(/img/triangles/project_metoomentum.png);
+}
+.triangle-back-project-game {
+  background-image: url(/img/triangles/project_game.png);
 }
 .main-bg {
   background: #0092A2;
@@ -7330,8 +7347,8 @@ footer {
   background-color: #BB1E2C;
 }
 .paint .triangle-paint {
-  background-image: url(/img/main/triangle_red.png);
-  background-size: 300px;
+  /* background-image: url(/img/main/triangle_red.png);
+  background-size: 300px; */
 }
 .project h2 {
   width: 70%;
@@ -7468,6 +7485,17 @@ footer {
   background-image: url(/img/main/about_back.png);
   background-position: center;
   background-size: 350px auto;
+}
+.triangles .triangle-paint {
+  height: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.triangle img {
+  max-width: 100%;
+}
+p.info-content-main {
+  font-size: 115%;
 }
 @media (min-width: 991px) {
   .about-img {
